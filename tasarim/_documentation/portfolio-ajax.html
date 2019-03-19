@@ -1,0 +1,93 @@
+<div class="title">
+  <h1>Ajax project loading</h1>
+</div>
+<p>Instead of having classic navigation with new projects list on different pages, you can display new projects in the same page using ajax.<br>
+You have 2 possibilities 2 load more projects: via a link (with a click event) or directly when user scroll to bottom of the page.<br>
+Moreover, you can load project content inside page.</p>
+
+<h2 class="section-title m-t-60">Ajax project in page</h2>
+<p><a class="btn btn-primary" href="../portfolio-ajax" target="_blank">Live example</a></p>
+<p>You can load a specific project in a dedicated page, or directly inside projects list page using Ajax.<br>
+Here is an example of projects list with 3 columns and caption visible:</p>
+<pre class="prettyprint">&lt;section class=&quot;section-portfolio&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;masonry grid grid-3 with-caption portfolio-ajax&quot;&gt;
+      &lt;div class=&quot;item&quot; data-content=&quot;project-1-path.html&quot;&gt;
+        &lt;div class=&quot;item-wrapper&quot;&gt;
+          &lt;figure class=&quot;indigo darken-3 he-2 caption-visible caption-center&quot;&gt;
+            &lt;img src=&quot;project-1-img.jpg&quot; alt=&quot;&quot;&gt;
+            &lt;div class=&quot;hover-icons&quot;&gt;
+              &lt;div class=&quot;hover-icons-wrapper&quot;&gt;
+                &lt;a href=&quot;#&quot; class=&quot;ajax-link&quot;&gt;
+                  &lt;i class=&quot;nc-icon-outline media-1_polaroid-multiple&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;figcaption&gt;
+              &lt;h4&gt;&lt;span&gt;Project 1 title&lt;/span&gt;&lt;/h4&gt;
+              &lt;p&gt;tag 1, tag 2&lt;/p&gt;
+            &lt;/figcaption&gt;
+          &lt;/figure&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;item&quot; data-content=&quot;http://localhost/new/include/ajax-portfolio/portfolio-ajax-image.php&quot;&gt;
+        &lt;!-- ITEM 2 CONTENT --&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>
+<p>You can load various project type: project with simple image, with images sliders, with video...</p>  
+
+<div class="separator"></div>
+
+<h2 class="section-title">Ajax projects on click</h2>
+<p><a class="btn btn-primary" href="../portfolio-infinite-onclick" target="_blank">Live example</a></p>
+<p>You have a button at the button of the page and new projects will load when user click on it. Your ajax page need to have same layout as you current page of course. Here is the markup with 3 projects columns:</p>
+<pre class="prettyprint">&lt;section class=&quot;section-portfolio&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;masonry grid grid-3 infinite-container infinite-onclick&quot;&gt;
+      &lt;div class=&quot;item&quot;&gt;
+        &lt;!-- ITEM 1 CONTENT --&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;item&quot;&gt;
+        &lt;!-- ITEM 2 CONTENT --&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;item&quot;&gt;
+        &lt;!-- ITEM 3 CONTENT --&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;next-page-wrapper&quot;&gt;
+      &lt;a data-num-page=&quot;3&quot; href=&quot;include/ajax-portfolio/portfolio-infinite-scroll&quot; class=&quot;btn btn-dark btn-rounded btn-bordered btn-lg next-page&quot;&gt;Load More...&lt;/a&gt;
+    &lt;/div&gt; 
+  &lt;/div&gt;
+&lt;/section&gt;</pre>
+<p>The main difference between classic layout with html pagination is specific classes for projects:<code>infinite-container</code> and <code>infinite-onclick</code>. And of course, the link at the bottom of the page to load more post with <code>next-page</code> class.</p>  
+
+<div class="separator"></div>
+
+<h2 class="section-title">Ajax projects on scroll</h2>
+<p><a class="btn btn-primary" href="../portfolio-infinite-scroll" target="_blank">Live example</a></p>
+<p>Instead of a text link at the button of the page, we place a loader link in order that user can see that new projects are loading and will appear.<br>  
+Here new projects will load automatically when you reach bottom of the page. Here is the markup with 3 projects columns:</p>
+<pre class="prettyprint">&lt;section class=&quot;section-portfolio&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;masonry grid grid-3 infinite-container&quot;&gt;
+      &lt;div class=&quot;item&quot;&gt;
+        &lt;!-- ITEM 1 CONTENT --&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;item&quot;&gt;
+        &lt;!-- ITEM 2 CONTENT --&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;item&quot;&gt;
+        &lt;!-- ITEM 3 CONTENT --&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;next-page-wrapper&quot;&gt;
+      &lt;a href=&quot;include/ajax-portfolio/portfolio-infinite-scroll&quot; class=&quot;next-page&quot; data-num-page=&quot;3&quot;&gt;&lt;/a&gt;
+      &lt;div class=&quot;spinner&quot;&gt;
+        &lt;div class=&quot;double-bounce1&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;double-bounce2&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt; 
+  &lt;/div&gt;
+&lt;/section&gt;</pre>

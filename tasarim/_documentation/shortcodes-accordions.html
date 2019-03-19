@@ -1,0 +1,120 @@
+<div class="title">
+  <h1>Accordion</h1>
+</div>
+<p>
+  <a class="btn btn-primary" href="../shortcodes-accordions" target="_blank">Live example</a>
+</p>
+<p>Accordion, like tabs, allow to display grouped information and show only necessary content. It could be usefull for FAQ or services section for example.</p>
+
+<h3>Basic markup</h3>
+<p>
+  <img src="img/screenshots/accordion-default.jpg" class="img-fluid no-bd" alt="accordion" />
+</p>
+<pre class="prettyprint">
+&lt;div class=&quot;panel-group panel-accordion&quot; id=&quot;my-accordion&quot;&gt;
+  &lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+      &lt;h4&gt;
+        &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#my-accordion&quot; href=&quot;#collapseOne&quot;&gt;
+          Section 1 title
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseOne&quot; class=&quot;panel-collapse collapse in&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        Section 1 content
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+      &lt;h4&gt;
+        &lt;a class=&quot;collapsed&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#my-accordion&quot; href=&quot;#collapseTwo&quot;&gt;
+        Section 2 title
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseTwo&quot; class=&quot;panel-collapse collapse&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        Section 2 content
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+      &lt;h4&gt;
+        &lt;a class=&quot;collapsed&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#my-accordion&quot; href=&quot;#collapseThree&quot;&gt;
+          Section 3 title
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseThree&quot; class=&quot;panel-collapse collapse&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        Section 3 content
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+<p>For dark version, add <code>dark-accordion</code> class to panel-accordion element.</p>
+<p>
+  <img src="img/screenshots/accordion-dark.jpg" class="img-fluid no-bd" alt="accordion" />
+</p>
+
+<div class="separator"></div>
+
+<h3>Button style</h3>
+<p>
+  <img src="img/screenshots/accordion-buttons.jpg" class="img-fluid no-bd" alt="accordion" />
+</p>
+<p>For button layout, add <code>panel-button</code> class to panel-accordion element.</p>
+<pre class="prettyprint">
+&lt;div class=&quot;panel-group panel-accordion panel-button&quot; id=&quot;my-accordion&quot;&gt;
+  &lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+      &lt;h4&gt;
+        &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#my-accordion&quot; href=&quot;#collapseOne&quot;&gt;
+          Section 1 title
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseOne&quot; class=&quot;panel-collapse collapse in&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        Section 1 content
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+      &lt;h4&gt;
+        &lt;a class=&quot;collapsed&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#my-accordion&quot; href=&quot;#collapseTwo&quot;&gt;
+        Section 2 title
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseTwo&quot; class=&quot;panel-collapse collapse&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        Section 2 content
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+      &lt;h4&gt;
+        &lt;a class=&quot;collapsed&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#my-accordion&quot; href=&quot;#collapseThree&quot;&gt;
+          Section 3 title
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseThree&quot; class=&quot;panel-collapse collapse&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        Section 3 content
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+<p>For dark version of this style, like previously, add <code>dark-accordion</code> class to panel-accordion element.</p>
+<p>
+  <img src="img/screenshots/accordion-buttons-dark.jpg" class="img-fluid no-bd" alt="accordion" />
+</p>

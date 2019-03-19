@@ -1,0 +1,92 @@
+<div class="title">
+  <h1>Google Maps</h1>
+</div>
+<p>
+  <a class="btn btn-primary" href="../shortcodes-maps" target="_blank">Live example</a>
+</p>
+<p>Customize your map with various style and layouts.</p>
+
+
+<h3>Create a basic map</h3>
+<p>To add a map on your page, you have to create an element with a <code>map</code> class.</p>
+<pre class="prettyprint">&lt;div class=&quot;map&quot; id=&quot;my-map&quot;&gt;&lt;/div&gt;</pre>
+
+<div class="separator"></div>
+
+<h3>Change map style color</h3>
+<p>Maps come with 5 styles. But it's easy to add new one. We will explain that after. Map style are managed via <code>data-map-style</code> attribute.</p>
+<p><strong>Default style (no attribute needed)</strong>:</p>
+<p>
+  <img src="img/screenshots/map-default.jpg" class="img-fluid no-bd img-500" alt="map" />
+</p>
+<pre class="prettyprint">&lt;div class=&quot;map&quot; id=&quot;my-map&quot;&gt;&lt;/div&gt;</pre>
+
+<p><strong>Black &amp; white style</strong>:</p>
+<p>
+  <img src="img/screenshots/map-black-white.jpg" class="img-fluid no-bd img-500" alt="map" />
+</p>
+<pre class="prettyprint">&lt;div class=&quot;map&quot; id=&quot;my-map&quot; data-map-style=&quot;black-white&quot;&gt;&lt;/div&gt;</pre>
+
+<p><strong>Dark style</strong>:</p>
+<p>
+  <img src="img/screenshots/map-dark.jpg" class="img-fluid no-bd img-500" alt="map" />
+</p>
+<pre class="prettyprint">&lt;div class=&quot;map&quot; id=&quot;my-map&quot; data-map-style=&quot;dark&quot;&gt;&lt;/div&gt;</pre>
+
+<p><strong>Blue style</strong>:</p>
+<p>
+  <img src="img/screenshots/map-blue.jpg" class="img-fluid no-bd img-500" alt="map" />
+</p>
+<pre class="prettyprint">&lt;div class=&quot;map&quot; id=&quot;my-map&quot; data-map-style=&quot;blue&quot;&gt;&lt;/div&gt;</pre>
+
+<p><strong>Turquoise style</strong>:</p>
+<p>
+  <img src="img/screenshots/map-turquoise.jpg" class="img-fluid no-bd img-500" alt="map" />
+</p>
+<pre class="prettyprint">&lt;div class=&quot;map&quot; id=&quot;my-map&quot; data-map-style=&quot;turquoise&quot;&gt;&lt;/div&gt;</pre>
+
+<div class="separator"></div>
+
+<h3>Maps options</h3>
+<p>Of course, we have to add some settings, at least map position. Here is an example of how to add settings:</p>
+<pre class="prettyprint">
+&lt;div class=&quot;map&quot; id=&quot;my-map&quot; data-plugin-options='{&quot;zoom&quot;:14,&quot;lat&quot;:51.5085300,&quot;lng&quot;:-0.1257400,&quot;panControl&quot;:false,&quot;mapTypeControl&quot;:false}'&gt;&lt;/div&gt;</pre>
+
+<p>Here is the list of all setting available:</p>
+<span><strong>Latitude (number):</strong></span>
+<pre class="prettyprint">
+&lt;div class=&quot;map&quot; id=&quot;my-map&quot; data-plugin-options='{&quot;lat&quot;:51.5085300}'&gt;&lt;/div&gt;</pre>
+
+<span><strong>Longitude (number):</strong></span>
+<pre class="prettyprint">
+&lt;div class=&quot;map&quot; id=&quot;my-map&quot; data-plugin-options='{lng&quot;}'&gt;&lt;/div&gt;</pre>
+
+<span><strong>Zoom (number):</strong></span>
+<pre class="prettyprint">
+&lt;div class=&quot;map&quot; id=&quot;my-map&quot; data-plugin-options='{&quot;zoom&quot;:14}'&gt;&lt;/div&gt;</pre>
+
+<span><strong>Pan control (boolean):</strong></span>
+<pre class="prettyprint">
+&lt;div class=&quot;map&quot; id=&quot;my-map&quot; data-plugin-options='{&quot;panControl&quot;:false}'&gt;&lt;/div&gt;</pre>
+
+<span><strong>Map type control (boolean):</strong></span>
+<pre class="prettyprint">
+&lt;div class=&quot;map&quot; id=&quot;my-map&quot; data-plugin-options='{&quot;mapTypeControl&quot;:false}'&gt;&lt;/div&gt;</pre>
+
+<span><strong>Street view control (boolean):</strong></span>
+<pre class="prettyprint">
+&lt;div class=&quot;map&quot; id=&quot;my-map&quot; data-plugin-options='{streetViewControl&quot;:true}'&gt;&lt;/div&gt;</pre>
+
+<div class="separator"></div>
+
+<h3>Inline Maps</h3>
+<p>To create inline map, just add <code>f-left</code> or <code>f-right</code> class to your map. Map will float on left on right side of the text / element.</p>
+<pre class="prettyprint">
+ &lt;div class=&quot;map f-left&quot; id=&quot;my-map&quot;&lt;/div&gt;
+
+ &lt;div class=&quot;map f-right&quot; id=&quot;my-map-2&quot;&lt;/div&gt;</pre>
+
+ <h3>Maps Height</h3>
+<p>You can specify height of your map with <code>data-map-height</code> attribute:</p>
+<pre class="prettyprint">
+ &lt;div class=&quot;map&quot; id=&quot;my-map&quot; data-map-height=&quot;400&quot;&gt;&lt;/div&gt;</pre>

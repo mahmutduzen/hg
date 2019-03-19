@@ -1,0 +1,35 @@
+<div class="title">
+  <h1>Widgets</h1>
+</div>
+<p>Themes include a large set of widgets that you can use in your page content or in footer. Some widgets, like social widgets, need to edit some specific files to customize it to your needs. </p>
+<p><a href="#" target="_blank" data-page="../shortcodes-widgets.html">See all widgets</a></p>
+
+<h3 class="section-title m-t-60">Twitter widget</h3>
+<p>If you use Twitter widget, you will certainly want to change Twitter feeds to display your tweets. To do that, you will to edit include/twitter/twitterBot.php file near line 6. Change Twitter username by yours for example (here it’s Envato). </p>
+<pre class="prettyprint">define('TWITTER_USERNAME', 'envato');</pre>  
+
+<div class="separator"></div>
+
+<h3 class="section-title m-t-60">Facebook page widget</h3>
+<p>You can change your facebook page easily directly in your html page. Just change <code>data-href</code> attribute of your fb-page element:</p>
+<pre class="prettyprint">&lt;div class=&quot;fb-page&quot; data-href=&quot;https://www.facebook.com/Themes-Lab-432272373573921&quot; data-small-header=&quot;false&quot; data-adapt-container-width=&quot;true&quot; data-hide-cover=&quot;false&quot; data-show-facepile=&quot;true&quot; data-show-posts=&quot;false&quot;&gt;&lt;/div&gt;</pre>  
+
+<div class="separator"></div>
+
+<h3 class="section-title m-t-60">Flickr widget</h3>
+<p>To modify Flickr stream, edit your widget inside your html page. You can customize user as well as number of images:</p>
+<pre class="prettyprint">&lt;div id=&quot;widget-flickr&quot; class=&quot;widget widget-flickr&quot; data-count=&quot;12&quot; data-user=&quot;here-what-you-want&quot;&gt;
+    &lt;h3 class=&quot;widget-title&quot;&gt;Flickr Photos&lt;/h3&gt;
+    &lt;ul class=&quot;flickr-list&quot;&gt;&lt;/ul&gt;
+&lt;/div&gt;</pre>  
+
+<div class="separator"></div>
+
+<h3 class="section-title m-t-60">Dribbble widget</h3>
+<p>Dribbble widget use Jribbble plugin: <a target="_blank" href="https://github.com/tylergaw/jribbble">https://github.com/tylergaw/jribbble</a>.</p>
+<p>To change Dribbble token, edit assets/js/widget.js file line 2.</p>
+
+<div class="separator"></div>
+
+<h3 class="section-title m-t-60">Pinterest widget</h3>
+<p>Edit your widget directly in your html page by changing href attribute. For more information about all Pinterest widgets, please visit official website here: <a href="https://developers.pinterest.com/tools/widget-builder/?type=pin" target="_blank">Pinterest widgets</a>.</p>

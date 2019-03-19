@@ -1,0 +1,79 @@
+<div class="title">
+  <h1>Offscreen Navigation</h1>
+</div>
+<p>When your menu is ready, you can choose between large choices of header variants.</p>
+<section>
+  <h2>Navigation Position</h2>
+  <p>Navigation can be at the top of your page, on the left and right side, or at the bottom on page load.</p>
+</section>
+
+<section>
+  <h2>Offscreen navigation</h2>
+  <p>Navigation can always be visible, or visible only when user click on a button (offscreen navigation). The button that toggle offscreen navigation is inside <code>main-navigation</code> id, in header, and have to <code>toggle-menu</code> class:
+  There are various offscreen navigation available:</p>
+  <h3>Left offscreen navigation.</h3>
+  <p><a class="btn btn-primary" href="../nav-left-onclick-push" target="_blank">Live example </a></p>
+  <p>Edit the toggle menu button like this:</p>
+  <pre class="prettyprint">
+&lt;button class=&quot;toggle-menu&quot; data-toggle=&quot;aside-menu&quot; data-effect=&quot;push&quot; data-position=&quot;left&quot;&gt;
+  &lt;i class=&quot;nc-icon-outline ui-2_menu-dots&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;</pre>  
+  If you prefer that menu hover page content, change data-effect to hover: <code>data-effect="hover"</code>.
+  Here is the basic markup:
+  <pre class="prettyprint">&lt;!-- BEGIN OFF ASIDE MENU --&gt;
+&lt;aside id=&quot;off-aside-menu&quot;&gt;
+  &lt;div class=&quot;aside-content&quot;&gt;
+    &lt;div class=&quot;aside-inner&quot;&gt;
+      &lt;div id=&quot;logo&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;
+          &lt;img src=&quot;assets/img/logo/your-logo.png&quot; alt=&quot;logo&quot;&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+      &lt;nav id=&quot;main-menu&quot;&gt;
+        &lt;!-- YOUR MENU --&gt;
+      &lt;/nav&gt;
+      &lt;footer&gt;
+        &lt;!-- NAVIGATION FOOTER --&gt;
+      &lt;/footer&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/aside&gt;
+&lt;!-- END OFF ASIDE MENU --&gt;</pre>  
+  <h3>Right offscreen navigation.</h3>
+  <p><a class="btn btn-primary" href="../nav-right-onclick-push" target="_blank">Live example</a></p>
+  <p>Edit the toggle menu button like this:</p>
+  <pre class="prettyprint">
+&lt;button class=&quot;toggle-menu&quot; data-toggle=&quot;aside-menu&quot; data-effect=&quot;push&quot; data-position=&quot;right&quot;&gt;
+  &lt;i class=&quot;nc-icon-outline ui-2_menu-dots&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;</pre>  
+  If you prefer that menu hover page content, change data-effect to hover: <code>data-effect="hover"</code>.  
+
+  <h3>Fullscreen off navigation.</h3>
+  <p><a class="btn btn-primary" href="../nav-fullscreen-overlay" target="_blank">Live example</a></p>
+  <p>Edit the toggle menu button like this:</p>
+  <pre class="prettyprint">
+&lt;button class=&quot;toggle-menu&quot; data-toggle=&quot;fullscreen-menu&quot;&gt;
+  &lt;i class=&quot;nc-icon-outline ui-2_menu-dots&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;</pre>  
+
+  <h3>Top offscreen navigation.</h3>
+  <p><a class="btn btn-primary" href="../nav-off-top-menu" target="_blank">Live example</a></p>
+  <p>Edit the toggle menu button like this:</p>
+  <pre class="prettyprint">
+&lt;button class=&quot;toggle-menu&quot; data-toggle=&quot;top-menu&quot;&gt;
+  &lt;i class=&quot;nc-icon-outline ui-2_menu-dots&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;</pre>  
+
+  <h3>Simple Menu offscreen navigation.</h3>
+  <p><a class="btn btn-primary" href="../nav-off-simple-menu" target="_blank">Live example</a></p>
+  <p>Edit the toggle menu button like this:</p>
+  <pre class="prettyprint">
+&lt;button class=&quot;toggle-menu&quot; data-toggle=&quot;main-menu&quot;&gt;
+  &lt;i class=&quot;nc-icon-outline ui-2_menu-dots&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;</pre> 
+  </p>
+</section>
+
+
+
+

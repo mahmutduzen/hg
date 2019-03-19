@@ -1,0 +1,164 @@
+<div class="title">
+  <h1>Portfolio</h1>
+</div>
+<p>Portfolio have multiple layouts and possibilities: masonry or grid, boxed or fullwidth, with space between item or not, with caption below image or not.. You can mix each one with another, which give you 16 variations. Each variation can have 2, 3, 4 or 5 columns. Number of columns decrease when screen size is lower.</p>
+<p>Concerning hover effects possibilities, please refer to hover effects section <a href="#" class="ajax-menu" data-page="shortcodes-hover-effects.html">here</a></p>
+
+<h2 class="section-title m-t-60">Boxed / wide layout</h2>
+<p>For fullwidth style, add <code>container-fluid</code> class after section-portfolio element:</p>
+<p><a class="btn btn-primary" href="../portfolio-masonry-4" target="_blank">Live example</a></p>
+<pre class="prettyprint">&lt;section class=&quot;section-portfolio&quot;&gt;
+  &lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;ul class=&quot;items-filter p-l-10&quot;&gt;
+      &lt;!-- ITEMS FILTERS CONTENT --&gt;
+    &lt;/ul&gt;
+    &lt;div class=&quot;masonry grid grid-4 with-caption&quot;&gt;
+      &lt;!-- ITEMS LIST CONTENT --&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>  
+<p>For boxed style, replace <code>container-fluid</code> by <code>container</code> class after section-portfolio element:</p>
+<p><a class="btn btn-primary" href="../portfolio-masonry-2" target="_blank">Live example</a></p>
+<pre class="prettyprint">&lt;section class=&quot;section-portfolio&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;ul class=&quot;items-filter p-l-10&quot;&gt;
+      &lt;!-- ITEMS FILTERS CONTENT --&gt;
+    &lt;/ul&gt;
+    &lt;div class=&quot;masonry grid grid-4 with-caption&quot;&gt;
+      &lt;!-- ITEMS LIST CONTENT --&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>  
+
+<div class="separator"></div>
+
+<h2 class="section-title">Item with space / collapsed</h2>
+<p>Portfolio item images can have padding or can be collapsed. For items with space (default layout), markup is the same as previous example:</p>
+<pre class="prettyprint">&lt;div class=&quot;masonry grid grid-4&quot;&gt;
+    &lt;!-- ITEMS LIST CONTENT --&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>  
+<p>For collapsed style (no padding), just add <code>no-space</code> class to your masonry element:</p>
+<pre class="prettyprint">&lt;div class=&quot;masonry grid grid-4 no-space&quot;&gt;
+    &lt;!-- ITEMS LIST CONTENT --&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>  
+
+<div class="separator"></div>
+
+<h2 class="section-title">Portfolio filters</h2>
+<p>You can have filters on your portfolio page (or not)</p>
+<pre class="prettyprint">&lt;section class=&quot;section-portfolio&quot;&gt;
+  &lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;ul class=&quot;items-filter p-l-10&quot;&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#&quot; data-filter=&quot;.cat-1&quot;&gt;Category 1&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#&quot; data-filter=&quot;.cat-2&quot;&gt;Category 2&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#&quot; data-filter=&quot;.cat-3&quot;&gt;Category 3&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;filter-all p-r-10&quot;&gt;
+        &lt;a href=&quot;#&quot; data-filter=&quot;*&quot; class=&quot;current&quot;&gt;All Categories&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class=&quot;masonry grid grid-4&quot;&gt;
+      &lt;!-- ITEMS LIST --&gt;
+    &lt;/div&gt;  
+  &lt;/div&gt;
+&lt;/section&gt;</pre>  
+<p>Then add specific filter class to each item. For example add <code>cat-1</code> class for an item in category 1.</p>
+
+<div class="separator"></div>
+
+<h2 class="section-title">Masonry Layout</h2>
+<p><a class="btn btn-primary" href="../portfolio-masonry-4" target="_blank">Live example</a></p>
+<p>Here is the basic markup of masonry layout with 4 columns and title hover image:</p>
+<pre class="prettyprint">&lt;section class=&quot;section-portfolio&quot;&gt;
+  &lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;ul class=&quot;items-filter p-l-10&quot;&gt;
+      &lt;!-- ITEMS FILTERS CONTENT --&gt;
+    &lt;/ul&gt;
+    &lt;div class=&quot;masonry grid grid-4&quot;&gt;
+      &lt;div class=&quot;item&quot;&gt;
+        &lt;div class=&quot;item-wrapper&quot;&gt;
+          &lt;figure class=&quot;he-1 red darken-3&quot; data-link=&quot;project-link-1.html&quot;&gt;
+            &lt;img src=&quot;project-1-img.jpg&quot; alt=&quot;&quot;&gt;
+            &lt;figcaption&gt;
+              &lt;h4&gt;Project 1&lt;/h4&gt;
+              &lt;p&gt;tag 1, tag 2, tag 3&lt;/p&gt;
+            &lt;/figcaption&gt;
+          &lt;/figure&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;item item-wide&quot;&gt;
+        &lt;div class=&quot;item-wrapper&quot;&gt;
+          &lt;figure class=&quot;he-1 amber darken-3&quot; data-link=&quot;project-link-2.html&quot;&gt;
+            &lt;img src=&quot;project-2-img.jpg&quot; alt=&quot;&quot;&gt;
+            &lt;figcaption&gt;
+              &lt;h4&gt;Project 2&lt;/h4&gt;
+              &lt;p&gt;tag 1, tag 2, tag 3&lt;/p&gt;
+            &lt;/figcaption&gt;
+          &lt;/figure&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;  
+  &lt;/div&gt;
+&lt;/section&gt;</pre>  
+<p>For large images, add <code>item-wide</code> class to your item. For tall image, add <code>item-tall</code> to your image.</p>
+<p>To change columns number, replace <code>grid-4</code> by grid-2 for 2 columns, grid-3 for 3 columns...</p>
+
+<div class="separator"></div>
+
+<h2 class="section-title">Grid Layout</h2>
+<p><a class="btn btn-primary" href="../portfolio-grid-4" target="_blank">Live example</a></p>
+<p>Grid layout as same markup as masonry layout. Just use image with same dimensions and not use <code>item-wide</code> or <code>item-tall</code> classes that are classes dedicated at masonry layout.<br>
+Here is an example with 4 columns and caption visible:</p>
+<pre class="prettyprint">&lt;section class=&quot;section-portfolio&quot;&gt;
+  &lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;ul class=&quot;items-filter p-l-10&quot;&gt;
+      &lt;!-- ITEMS FILTERS CONTENT --&gt;
+    &lt;/ul&gt;
+    &lt;div class=&quot;masonry grid grid-4 with-caption&quot;&gt;
+      &lt;div class=&quot;item&quot;&gt;
+        &lt;div class=&quot;item-wrapper&quot;&gt;
+          &lt;figure class=&quot;he-2 caption-visible caption-center blue darken-3&quot;&gt;
+            &lt;img src=&quot;project-1-img.jpg&quot; alt=&quot;&quot;&gt;
+            &lt;div class=&quot;hover-icons&quot;&gt;
+              &lt;div class=&quot;hover-icons-wrapper&quot;&gt;
+                &lt;a href=&quot;project-1-img.jpg&quot; class=&quot;magnific&quot;&gt;
+                  &lt;i class=&quot;nc-icon-outline arrows-1_window-zoom-in&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;figcaption&gt;
+              &lt;h4&gt;&lt;a href=&quot;project-1.html&quot;&gt;Project 1&lt;/a&gt;&lt;/h4&gt;
+              &lt;p&gt;tag 1, tag 2, tag 3&lt;/p&gt;
+            &lt;/figcaption&gt;
+          &lt;/figure&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;item&quot;&gt;
+        &lt;div class=&quot;item-wrapper&quot;&gt;
+          &lt;figure class=&quot;he-2 caption-visible caption-center red darken-3&quot;&gt;
+            &lt;img src=&quot;project-2-img.jpg&quot; alt=&quot;&quot;&gt;
+            &lt;div class=&quot;hover-icons&quot;&gt;
+              &lt;div class=&quot;hover-icons-wrapper&quot;&gt;
+                &lt;a href=&quot;project-2-img.jpg&quot; class=&quot;magnific&quot;&gt;
+                  &lt;i class=&quot;nc-icon-outline arrows-1_window-zoom-in&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;figcaption&gt;
+              &lt;h4&gt;&lt;a href=&quot;project-2.html&quot;&gt;Project 2&lt;/a&gt;&lt;/h4&gt;
+              &lt;p&gt;tag 1, tag 2, tag 3&lt;/p&gt;
+            &lt;/figcaption&gt;
+          &lt;/figure&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>  
+<p>To change columns number, replace <code>grid-4</code> by grid-2 for 2 columns, grid-3 for 3 columns...</p>

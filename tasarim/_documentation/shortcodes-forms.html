@@ -1,0 +1,259 @@
+<div class="title">
+  <h1>Form elements</h1>
+</div>
+<p>
+  <a class="btn btn-primary" href="../shortcodes-forms" target="_blank">Live example</a>
+</p>
+<p>This template use the default bootstrap form markup. You can read more about it here: <a target="_blank" href="http://getbootstrap.com/css/#tables">http://getbootstrap.com/css/#forms</a>.</p>
+
+<h2 class="section-title m-t-60">Standard Form Layout</h2>
+<p>To create a basic form, you just have to add <code>form-control</code> class to each input, and wrap label &amp; input inside a form-group class div.</p>
+<pre class="prettyprint">
+&lt;form role=&quot;form&quot;&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;email&quot;&gt;Email address&lt;/label&gt;
+    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;
+    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;password&quot;&gt;
+  &lt;/div&gt;
+  &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</pre>
+
+<div class="separator"></div>
+
+<h2 class="section-title">Horizontal Form Layout</h2>
+<p>If you prefer to have label &amp; input on the same line, just add <code>form-horizontal</code> class to your form.</p>
+<pre class="prettyprint">
+&lt;form role=&quot;form&quot; class=&quot;form-horizontal&quot;&gt;
+  &lt;!-- YOUR FORM CONTENT --&gt;
+&lt;/form&gt;</pre>
+
+<div class="separator"></div>
+
+<h2 class="section-title">Normal &amp; grouped style</h2>
+<p>
+  <img src="img/screenshots/form-grouped.jpg" class="img-fluid" alt="form" />
+</p>
+<p>For each form element, you can choose between classic design or grouped design. To create grouped design, add <code>form-grouped</code> to your form-group class.</p>
+<pre class="prettyprint">
+&lt;div class=&quot;form-group form-grouped&quot;&gt;
+  &lt;label&gt;Input name&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;default input&quot;&gt;
+&lt;/div&gt;</pre>
+
+<div class="separator"></div>
+
+<h2 class="section-title">Input Size</h2>
+<p>
+  <img src="img/screenshots/form-size.jpg" class="img-fluid" alt="form" />
+</p>
+<p>You can change input size by adding input-sm class for small input or input-lg for large input. You can choose various sizes: small, medium and large input.</p>
+<pre class="prettyprint">
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label&gt;Large&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control input-lg&quot; placeholder=&quot;input-lg&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label&gt;Normal&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;default input&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label&gt;Small&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control input-sm&quot; placeholder=&quot;input-sm&quot;&gt;
+&lt;/div&gt;</pre>
+
+<div class="separator"></div>
+
+<h2 class="section-title">Append &amp; prepend input</h2>
+<p>
+  <img src="img/screenshots/form-prepend.jpg" class="img-fluid" alt="form" />
+</p>
+<p>Add icons inside your input to explain which type of data is required. You can add all icons available, at the beginning or at the end of input.</p>
+<pre class="prettyprint">
+&lt;div class=&quot;prepend-icon&quot;&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Firstname&quot;&gt;
+  &lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;append-icon&quot;&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Lastname&quot;&gt;
+  &lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;
+</pre>
+
+<div class="separator"></div>
+
+<h2 class="section-title">Select input</h2>
+<p>
+  <img src="img/screenshots/form-select.jpg" class="img-fluid" alt="form" />
+</p>
+<p>Theme use Select2 plugin. It offer a wide range of options and functionnalities.</p>
+<p><a class="btn btn-primary" href="https://select2.github.io/" target="_blank">Select2 plugin website</a></p>
+<h3>Basic markup</h3>
+<pre class="prettyprint">
+&lt;select class=&quot;form-control&quot;&gt;
+  &lt;option value=&quot;value-1&quot;&gt;Value 1&lt;/option&gt;
+  &lt;option value=&quot;value-2&quot;&gt;Value 2&lt;/option&gt;
+  &lt;option value=&quot;value-3&quot;&gt;Value 3&lt;/option&gt;
+&lt;/select&gt;
+</pre>
+<h3>Select with search option</h3>
+<pre class="prettyprint">
+&lt;select class=&quot;form-control&quot; data-search=&quot;true&quot;&gt;
+  &lt;option value=&quot;value-1&quot;&gt;Value 1&lt;/option&gt;
+  &lt;option value=&quot;value-2&quot;&gt;Value 2&lt;/option&gt;
+  &lt;option value=&quot;value-3&quot;&gt;Value 3&lt;/option&gt;
+&lt;/select&gt;
+</pre>
+<h3>Select with multiple select. Here each selection appear like a tag.</h3>
+<pre class="prettyprint">
+&lt;select multiple class=&quot;form-control&quot; data-placeholder=&quot;Choose one or various options...&quot;&gt;
+  &lt;option value=&quot;value-1&quot;&gt;Value 1&lt;/option&gt;
+  &lt;option value=&quot;value-2&quot;&gt;Value 2&lt;/option&gt;
+  &lt;option value=&quot;value-3&quot;&gt;Value 3&lt;/option&gt;
+&lt;/select&gt;
+</pre>
+<h3>Grouped layout.</h3>
+<pre class="prettyprint">
+&lt;div class=&quot;form-group form-grouped form-grouped-select-2&quot;&gt;
+  &lt;label&gt;Multiple Select&lt;/label&gt;
+  &lt;select multiple class=&quot;form-control&quot;&gt;
+    &lt;!-- OPTIONS HERE --&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+</pre>
+
+<h2 class="section-title">Tags input</h2>
+<p>
+  <img src="img/screenshots/form-tags.jpg" class="img-fluid" alt="form" />
+</p>
+<p>Tags input are usefull if you want to allow visitor to enter various custom values. You can add default value with <code>value</code> attribute</p>
+<pre class="prettyprint">
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;input class=&quot;select-tags form-control&quot; value=&quot;brown,red,green&quot;&gt;
+&lt;/div&gt;
+</pre>
+<h3>Grouped layout.</h3>
+<pre class="prettyprint">
+&lt;div class=&quot;form-group form-grouped&quot;&gt;
+  &lt;label&gt;Select favorite colors&lt;/label&gt;
+  &lt;input class=&quot;select-tags form-control&quot; value=&quot;brown,red,green&quot;&gt;
+&lt;/div&gt;
+</pre>
+
+<h2 class="section-title">Datepicker</h2>
+<p>
+  <img src="img/screenshots/form-datepicker.jpg" class="img-fluid" alt="form" />
+</p>
+<p>Theme use Bootstrap Datepicker plugin. It's one of the most used datepicker plugin.</p>
+<p><a class="btn btn-primary" href="https://github.com/eternicode/bootstrap-datepicker" target="_blank">Bootstrap Datepicker page</a></p>
+<p>Here is an example with a prepend icon (optional):</p>
+<pre class="prettyprint">
+&lt;div class=&quot;prepend-icon&quot;&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control datepicker&quot; placeholder=&quot;choose a date&quot;&gt;
+  &lt;i class=&quot;fa fa-calendar&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;
+</pre>
+<h3>Grouped layout.</h3>
+<pre class="prettyprint">
+&lt;div class=&quot;form-group form-grouped&quot;&gt;
+  &lt;label&gt;Select a Date&lt;/label&gt;
+  &lt;div class=&quot;prepend-icon&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control datepicker&quot; placeholder=&quot;choose a date&quot;&gt;
+    &lt;i class=&quot;fa fa-calendar&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+<h2 class="section-title">Radio input</h2>
+<p>
+  <img src="img/screenshots/form-radio.jpg" class="img-fluid" alt="form" />
+</p>
+<p>There is 2 layouts: horizontal &amp; vertical.</p>
+<h3>Horizontal layout (list):</h3>
+<pre class="prettyprint">
+&lt;div class=&quot;radio&quot;&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;radio-button-1&quot; id=&quot;radio-1&quot; checked&gt;
+  &lt;label for=&quot;radio-1&quot;&gt;Choice 1&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;radio&quot;&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;radio-button-1&quot; id=&quot;radio-2&quot;&gt;
+  &lt;label for=&quot;radio-2&quot;&gt;Choice 2&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;radio&quot;&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;radio-button-1&quot; id=&quot;radio-3&quot;&gt;
+  &lt;label for=&quot;radio-3&quot;&gt;Choice 3&lt;/label&gt;
+&lt;/div&gt;
+</pre>
+<h3>Vertical layout:</h3>
+<pre class="prettyprint">
+&lt;ul class=&quot;form-list&quot;&gt;
+  &lt;li&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;radio-button-3&quot; id=&quot;radio-7&quot; checked&gt;
+    &lt;label for=&quot;radio-7&quot;&gt;Choice 1&lt;/label&gt;
+  &lt;/li&gt;
+    
+  &lt;li&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;radio-button-3&quot; id=&quot;radio-8&quot;&gt;
+    &lt;label for=&quot;radio-8&quot;&gt;Choice 2&lt;/label&gt;
+  &lt;/li&gt;
+
+  &lt;li&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;radio-button-3&quot; id=&quot;radio-9&quot;&gt;
+    &lt;label for=&quot;radio-9&quot;&gt;Choice 3&lt;/label&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<h2 class="section-title">Checkbox input</h2>
+<p>
+  <img src="img/screenshots/form-checkbox.jpg" class="img-fluid" alt="form" />
+</p>
+<p>In the same way as radio input, checkbox have 2 layouts: horizontal &amp; vertical.</p>
+<h3>Horizontal layout (list):</h3>
+<pre class="prettyprint">
+&lt;div class=&quot;checkbox&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-1&quot; checked&gt;
+  &lt;label for=&quot;checkbox-1&quot;&gt;Option 1&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-2&quot;&gt;
+    &lt;label for=&quot;checkbox-2&quot;&gt;Option 2&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;checkbox&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-3&quot;&gt;
+  &lt;label for=&quot;checkbox-3&quot;&gt;Option 3&lt;/label&gt;
+&lt;/div&gt;
+</pre>
+<h3>Vertical layout:</h3>
+<pre class="prettyprint">
+&lt;ul class=&quot;form-list&quot;&gt;
+  &lt;li&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-1&quot; checked&gt;
+    &lt;label for=&quot;checkbox-1&quot;&gt;Option 1&lt;/label&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-2&quot;&gt;
+    &lt;label for=&quot;checkbox-2&quot;&gt;Option 2&lt;/label&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-3&quot;&gt;
+    &lt;label for=&quot;checkbox-3&quot;&gt;Option 3&lt;/label&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+
+
+
+
+
+
+
+<div class="separator"></div>
+
+
+
+

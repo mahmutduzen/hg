@@ -1,0 +1,139 @@
+<div class="title">
+  <h1>Progress bars</h1>
+  <p>Animated progress effect for skills, works or project for example.</p>
+</div>
+<p>
+  <a class="btn btn-primary" href="../shortcodes-progress-bars" target="_blank">Live example</a>
+</p>
+
+<h3>Basic markup</h3>
+<p>
+  <img src="img/screenshots/progress-bar.jpg" class="img-fluid no-bd" alt="progress" />
+</p>
+<pre class="prettyprint">
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; value=&quot;91&quot; aria-valuemin=&quot;0&quot; max=&quot;100&quot;&gt;   
+    &lt;div class=&quot;progress-info&quot;&gt;
+      &lt;span class=&quot;progress-name&quot;&gt;Design&lt;/span&gt;
+      &lt;span class=&quot;progress-value&quot;&gt;91%&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+<p>Progress bar have 3 main attributes:</p>
+<p><code>aria-valuemin</code>: define minimum value of progress bar (0 in general)</p>
+<p><code>aria-valuemax</code>: define maximum value of progress bar (often 100)</p>
+<p><code>aria-valuenow</code>: current value of this skills, works...</p>
+
+<div class="separator"></div>
+
+<h3>Animation delay</h3>
+<p>To add animation delay, add <code>data-animation-delay</code> to progress bar element. For example, for a 1.5 second delay:</p>
+<pre class="prettyprint">
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; value=&quot;91&quot; aria-valuemin=&quot;0&quot; max=&quot;100&quot; data-animation-delay=&quot;1500&quot;&gt;   
+    &lt;div class=&quot;progress-info&quot;&gt;
+      &lt;span class=&quot;progress-name&quot;&gt;Design&lt;/span&gt;
+      &lt;span class=&quot;progress-value&quot;&gt;91%&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+<div class="separator"></div>
+
+<h3>Custom colors</h3>
+<p>
+  <img src="img/screenshots/progress-colors.jpg" class="img-fluid no-bd" alt="progress" />
+</p>
+<p>Progress bars have 6 predefined colors. By default, progress bar is dark.</p>
+<p><strong>Blue progress bar:</strong></p>
+<pre class="prettyprint">
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar progress-bar-blue&quot; role=&quot;progressbar&quot; value=&quot;65&quot; aria-valuemin=&quot;0&quot; max=&quot;100&quot;&gt;
+    &lt;div class=&quot;progress-info&quot;&gt;
+      &lt;span class=&quot;progress-name&quot;&gt;Javascript&lt;/span&gt;
+      &lt;span class=&quot;progress-value&quot;&gt;65%&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p><strong>Green progress bar:</strong></p>
+<pre class="prettyprint">
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar progress-bar-success&quot; role=&quot;progressbar&quot; value=&quot;92&quot; aria-valuemin=&quot;0&quot; max=&quot;100&quot;&gt;
+    &lt;div class=&quot;progress-info&quot;&gt;
+      &lt;span class=&quot;progress-name&quot;&gt;Html&lt;/span&gt;
+      &lt;span class=&quot;progress-value&quot;&gt;92%&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p><strong>Orange progress bar:</strong></p>
+<pre class="prettyprint">
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar progress-bar-primary&quot; role=&quot;progressbar&quot; value=&quot;65&quot; aria-valuemin=&quot;0&quot; max=&quot;100&quot;&gt;
+    &lt;div class=&quot;progress-info&quot;&gt;
+      &lt;span class=&quot;progress-name&quot;&gt;Javascript&lt;/span&gt;
+      &lt;span class=&quot;progress-value&quot;&gt;65%&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p><strong>Red progress bar:</strong></p>
+<pre class="prettyprint">
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar progress-bar-danger&quot; role=&quot;progressbar&quot; value=&quot;65&quot; aria-valuemin=&quot;0&quot; max=&quot;100&quot;&gt;
+    &lt;div class=&quot;progress-info&quot;&gt;
+      &lt;span class=&quot;progress-name&quot;&gt;Javascript&lt;/span&gt;
+      &lt;span class=&quot;progress-value&quot;&gt;65%&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+<div class="separator"></div>
+
+<h3>Custom sizes</h3>
+<p>
+  <img src="img/screenshots/progress-sizes.jpg" class="img-fluid no-bd" alt="progress" />
+</p>
+<p>Progress bars have 4 different sizes: small, normal, large and huge.</p>
+<p><strong>Small progress bar:</strong></p>
+<pre class="prettyprint">
+&lt;div class=&quot;progress progress-bar-sm&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; value=&quot;76&quot; aria-valuemin=&quot;0&quot; max=&quot;100&quot;&gt;
+    &lt;div class=&quot;progress-info&quot;&gt;
+      &lt;span class=&quot;progress-name&quot;&gt;Design&lt;/span&gt;
+      &lt;span class=&quot;progress-value&quot;&gt;76%&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p><strong>Normal progress bar:</strong></p>
+<pre class="prettyprint">
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; value=&quot;92&quot; aria-valuemin=&quot;0&quot; max=&quot;100&quot;&gt;
+    &lt;div class=&quot;progress-info&quot;&gt;
+      &lt;span class=&quot;progress-name&quot;&gt;Html&lt;/span&gt;
+      &lt;span class=&quot;progress-value&quot;&gt;92%&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p><strong>Large progress bar:</strong></p>
+<pre class="prettyprint">
+&lt;div class=&quot;progress progress-bar-lg&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; value=&quot;65&quot; aria-valuemin=&quot;0&quot; max=&quot;100&quot;&gt;
+    &lt;div class=&quot;progress-info&quot;&gt;
+      &lt;span class=&quot;progress-name&quot;&gt;Javascript&lt;/span&gt;
+      &lt;span class=&quot;progress-value&quot;&gt;65%&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p><strong>Huge progress bar:</strong></p>
+<pre class="prettyprint">
+&lt;div class=&quot;progress progress-bar-hg&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; value=&quot;65&quot; aria-valuemin=&quot;0&quot; max=&quot;100&quot;&gt;
+    &lt;div class=&quot;progress-info&quot;&gt;
+      &lt;span class=&quot;progress-name&quot;&gt;Php&lt;/span&gt;
+      &lt;span class=&quot;progress-value&quot;&gt;65%&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>

@@ -1,0 +1,92 @@
+<div class="title">
+  <h1>Ajax posts loading</h1>
+</div>
+<p>Instead of having classic navigation with posts on different pages, you can display new posts in the same page using ajax.</p>
+<p>You have 2 possibilities 2 load more posts: via a link (with a click event) or directly when user scroll to bottom of the page.</p>
+
+<h2 class="section-title m-t-60">Ajax posts on click</h2>
+<p><a class="btn btn-primary" href="../blog-infinite-onclick" target="_blank">Live example</a></p>
+<p>You have a button at the button of the page and new posts will load when user click on it. Your ajax page need to have same layout as you current page of course. Here is the markup with 3 posts columns:</p>
+<pre class="prettyprint">&lt;section class=&quot;section-blog&quot;&gt;
+  &lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;div class=&quot;posts masonry masonry-layout grid grid-3 grid infinite-container infinite-onclick&quot;&gt;
+      &lt;div class=&quot;item&quot;&gt;
+        &lt;div class=&quot;item-wrapper&quot;&gt;
+          &lt;div class=&quot;post&quot;&gt;
+            &lt;div class=&quot;post-medias&quot;&gt;
+              &lt;!-- MEDIA CONTENT: IMAGES, AUDIO, VIDEO --&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;post-info&quot;&gt;
+              &lt;h2 class=&quot;post-title&quot;&gt;&lt;a href=&quot;blog-single-left.html&quot;&gt;Post title&lt;/a&gt;&lt;/h2&gt;
+              &lt;ul class=&quot;post-meta&quot;&gt;
+                &lt;li&gt;
+                  by &lt;a href=&quot;#&quot;&gt;Admin&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  on &lt;a href=&quot;#&quot;&gt;January 15, 2016&lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;div class=&quot;post-excerpt&quot;&gt;
+                &lt;p&gt;Post excerpt.&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;a href=&quot;&quot; class=&quot;more&quot;&gt;Read More&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;item&quot;&gt;
+        &lt;!-- ITEM 2 --&gt;
+      &lt;/div&gt;
+    &lt;/div&gt; 
+    &lt;div class=&quot;next-page-wrapper&quot;&gt;
+      &lt;a href=&quot;include/ajax-blog/blog-infinite-scroll&quot; class=&quot;btn btn-lg btn-rounded btn-bordered btn-dark next-page&quot; data-num-page=&quot;3&quot;&gt;Load More&lt;/a&gt;
+    &lt;/div&gt;  
+  &lt;/div&gt;
+&lt;/section&gt;</pre>
+
+<p>The main difference between classic layout with html pagination is specific classes for posts:<code>infinite-container</code> and <code>infinite-onclick</code>. And of course, the link at the bottom of the page to load more post with <code>next-page</code> class.</p>  
+
+<h2 class="section-title m-t-60">Ajax posts on scroll</h2>
+<p><a class="btn btn-primary" href="../blog-infinite-scroll" target="_blank">Live example</a></p>
+<p>Instead of a text link at the button of the page, we place a loader link in order that user can see that new posts are loading and will appear.<br>  
+Here new posts will load automatically when you reach bottom of the page. Here is the markup with 3 posts columns:</p>
+<pre class="prettyprint">&lt;section class=&quot;section-blog&quot;&gt;
+  &lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;div class=&quot;posts masonry masonry-layout grid grid-3 grid infinite-container&quot;&gt;
+      &lt;div class=&quot;item&quot;&gt;
+        &lt;div class=&quot;item-wrapper&quot;&gt;
+          &lt;div class=&quot;post&quot;&gt;
+            &lt;div class=&quot;post-medias&quot;&gt;
+              &lt;!-- MEDIA CONTENT: IMAGES, AUDIO, VIDEO --&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;post-info&quot;&gt;
+              &lt;h2 class=&quot;post-title&quot;&gt;&lt;a href=&quot;blog-single-left.html&quot;&gt;Post title&lt;/a&gt;&lt;/h2&gt;
+              &lt;ul class=&quot;post-meta&quot;&gt;
+                &lt;li&gt;
+                  by &lt;a href=&quot;#&quot;&gt;Admin&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  on &lt;a href=&quot;#&quot;&gt;January 15, 2016&lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;div class=&quot;post-excerpt&quot;&gt;
+                &lt;p&gt;Post excerpt.&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;a href=&quot;&quot; class=&quot;more&quot;&gt;Read More&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;item&quot;&gt;
+        &lt;!-- ITEM 2 --&gt;
+      &lt;/div&gt;
+    &lt;/div&gt; 
+    &lt;div class=&quot;next-page-wrapper&quot;&gt;
+      &lt;a href=&quot;include/ajax-blog/blog-infinite-scroll&quot; class=&quot;next-page&quot; data-num-page=&quot;3&quot;&gt;&lt;/a&gt;
+      &lt;div class=&quot;spinner&quot;&gt;
+        &lt;div class=&quot;double-bounce1&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;double-bounce2&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt; 
+  &lt;/div&gt;
+&lt;/section&gt;</pre>

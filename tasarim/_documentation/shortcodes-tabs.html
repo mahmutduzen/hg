@@ -1,0 +1,209 @@
+<div class="title">
+  <h1>Tabs</h1>
+</div>
+<p>
+  <a class="btn btn-primary" href="../shortcodes-tabs" target="_blank">Live example</a>
+</p>
+<p>Tabs allow to display grouped information and show only necessary content.</p>
+
+<h3>Basic markup</h3>
+<p>
+  <img src="img/screenshots/tabs-default.jpg" class="img-fluid no-bd" alt="tabs" />
+</p>
+<pre class="prettyprint">
+&lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+  &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;
+    &lt;a href=&quot;#tab-1&quot; aria-controls=&quot;tab-1&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;
+      Tab 1
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li role=&quot;presentation&quot;&gt;
+    &lt;a href=&quot;#tab-2&quot; aria-controls=&quot;tab-2&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;
+      Tab 2
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li role=&quot;presentation&quot;&gt;
+    &lt;a href=&quot;#tab-3&quot; aria-controls=&quot;tab-3&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;
+      Tab 3
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;tab-content&quot;&gt;
+  &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade in active&quot; id=&quot;tab-1&quot;&gt;
+    Tab 1 content
+  &lt;/div&gt;
+  &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;tab-2&quot;&gt;
+    Tab 2content
+  &lt;/div&gt;
+  &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;tab-3&quot;&gt;
+    Tab 3 content
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+<div class="separator"></div>
+
+<h3>Bordered style</h3>
+<p>
+  <img src="img/screenshots/tabs-bordered.jpg" class="img-fluid no-bd" alt="tabs" />
+</p>
+<p>For bordered layout, just wrap your tabs inside <code>tab-bordered</code> class element.</p>
+<pre class="prettyprint">
+&lt;div class=&quot;tab-bordered&quot;&gt;
+  &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+    &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;
+      &lt;a href=&quot;#tab-1&quot; aria-controls=&quot;tab-1&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;
+        Tab 1
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;
+      &lt;a href=&quot;#tab-2&quot; aria-controls=&quot;tab-2&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;
+        Tab 2
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;
+      &lt;a href=&quot;#tab-3&quot; aria-controls=&quot;tab-3&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;
+        Tab 3
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class=&quot;tab-content&quot;&gt;
+    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade in active&quot; id=&quot;tab-1&quot;&gt;
+      Tab 1 content
+    &lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;tab-2&quot;&gt;
+      Tab 2content
+    &lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;tab-3&quot;&gt;
+      Tab 3 content
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+<div class="separator"></div>
+
+<h3>Border bottom style</h3>
+<p>
+  <img src="img/screenshots/tabs-line.jpg" class="img-fluid no-bd" alt="tabs" />
+</p>
+<p>For border bottom layout, just wrap your tabs inside <code>tab-line-bottom</code> class element.</p>
+<pre class="prettyprint">
+&lt;div class=&quot;tab-line-bottom&quot;&gt;
+  &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+    &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;
+      &lt;a href=&quot;#tab-1&quot; aria-controls=&quot;tab-1&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;
+        Tab 1
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;
+      &lt;a href=&quot;#tab-2&quot; aria-controls=&quot;tab-2&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;
+        Tab 2
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;
+      &lt;a href=&quot;#tab-3&quot; aria-controls=&quot;tab-3&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;
+        Tab 3
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class=&quot;tab-content&quot;&gt;
+    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade in active&quot; id=&quot;tab-1&quot;&gt;
+      Tab 1 content
+    &lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;tab-2&quot;&gt;
+      Tab 2content
+    &lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;tab-3&quot;&gt;
+      Tab 3 content
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+<div class="separator"></div>
+
+<h3>Buttons style</h3>
+<p>
+  <img src="img/screenshots/tabs-buttons.jpg" class="img-fluid no-bd" alt="tabs" />
+</p>
+<p>For border buttons layout, add <code>tab-buttons</code> class to nav-tabs element.</p>
+<pre class="prettyprint">
+&lt;ul class=&quot;nav nav-tabs tab-buttons&quot; role=&quot;tablist&quot;&gt;
+  &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;
+    &lt;a href=&quot;#tab-1&quot; aria-controls=&quot;tab-1&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;
+      Tab 1
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li role=&quot;presentation&quot;&gt;
+    &lt;a href=&quot;#tab-2&quot; aria-controls=&quot;tab-2&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;
+      Tab 2
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li role=&quot;presentation&quot;&gt;
+    &lt;a href=&quot;#tab-3&quot; aria-controls=&quot;tab-3&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;
+      Tab 3
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;tab-content&quot;&gt;
+  &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade in active&quot; id=&quot;tab-1&quot;&gt;
+    Tab 1 content
+  &lt;/div&gt;
+  &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;tab-2&quot;&gt;
+    Tab 2content
+  &lt;/div&gt;
+  &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;tab-3&quot;&gt;
+    Tab 3 content
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+<div class="separator"></div>
+
+<h3>Side layout</h3>
+<p>
+  <img src="img/screenshots/tabs-side.jpg" class="img-fluid no-bd" alt="tabs" />
+</p>
+<p>If you want to move tabs navigation to left side, wrap your tabs inside <code>tab-left</code> class element.</p>
+<pre class="prettyprint">
+&lt;div class=&quot;tab-left&quot;&gt;
+  &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+    &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;
+      &lt;a href=&quot;#tab-1&quot; aria-controls=&quot;tab-1&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;
+        Tab 1
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;
+      &lt;a href=&quot;#tab-2&quot; aria-controls=&quot;tab-2&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;
+        Tab 2
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;
+      &lt;a href=&quot;#tab-3&quot; aria-controls=&quot;tab-3&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;
+        Tab 3
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class=&quot;tab-content&quot;&gt;
+    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade in active&quot; id=&quot;tab-1&quot;&gt;
+      Tab 1 content
+    &lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;tab-2&quot;&gt;
+      Tab 2content
+    &lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;tab-3&quot;&gt;
+      Tab 3 content
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+<p>You can mix side layout with other style, for example buttons design</p>
+<p>
+  <img src="img/screenshots/tabs-side-buttons.jpg" class="img-fluid no-bd" alt="tabs" />
+</p>
+<pre class="prettyprint">
+&lt;div class=&quot;tab-left tab-buttons&quot;&gt;
+  &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+    &lt;!-- TABS NAVIGATION --&gt;
+  &lt;/ul&gt;
+  &lt;div class=&quot;tab-content&quot;&gt;
+    &lt;!-- TABS CONTENT --&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>

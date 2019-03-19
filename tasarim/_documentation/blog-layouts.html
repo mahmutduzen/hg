@@ -1,0 +1,405 @@
+<div class="title">
+  <h1>Blog</h1>
+</div>
+<p>Blog have multiple layouts: modern, newspaper, timeline, or classic with large and small images.</p>
+<p>For figure markup, please refer to hover effects section <a href="#" class="ajax-menu" data-page="shortcodes-hover-effects.html">here</a></p>
+
+<h2 class="section-title m-t-60">Timeline layout</h2>
+<p>Timeline have 3 layouts: timeline alternate, left sidebar and right sidebar.</p>
+<h3>Timeline alternate posts</h3>
+<p><a class="btn btn-primary" href="../blog-timeline" target="_blank">Live example</a></p>
+<p>Here is the basic markup of timeline layout with posts on left &amp; right side (no sidebar):</p>
+<pre class="prettyprint">&lt;section class=&quot;section-blog blog-timeline timeline-alternate&quot;&gt;
+  &lt;div class=&quot;container-large&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div id=&quot;blog-main&quot; class=&quot;col-md-10 col-md-offset-1&quot;&gt;
+        &lt;div class=&quot;blog-wrapper&quot;&gt;
+          &lt;div class=&quot;posts&quot;&gt;
+            &lt;div class=&quot;post&quot;&gt;
+              &lt;div class=&quot;post-date&quot;&gt;
+                3 &lt;span&gt;Apr&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;post-medias&quot;&gt;
+                &lt;!-- MEDIA CONTENT: IMAGES, AUDIO, VIDEO --&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;post-info&quot;&gt;
+                &lt;h2 class=&quot;post-title&quot;&gt;&lt;a href=&quot;blog-single-left.html&quot;&gt;Post title&lt;/a&gt;&lt;/h2&gt;
+                &lt;div class=&quot;post-excerpt&quot;&gt;
+                  &lt;p&gt;Post excerpt&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;post-meta&quot;&gt;
+                  &lt;div class=&quot;f-left&quot;&gt;
+                    &lt;a href=&quot;&quot; class=&quot;more&quot;&gt;Read More&lt;/a&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;f-right&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;comments&quot;&gt;2 Comments&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;post&quot;&gt;
+              &lt;!-- POST 2 CONTENT --&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>  
+
+<h3>Timeline with left sidebar</h3>
+<p><a class="btn btn-primary" href="../blog-timeline-sidebar-left" target="_blank">Live example</a></p>
+<p>For timeline layout with left sidebar, here is the markup:</p>
+<pre class="prettyprint">&lt;section class=&quot;section-blog blog-timeline timeline-right&quot;&gt;
+  &lt;div class=&quot;container-large&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div id=&quot;blog-main&quot; class=&quot;col-lg-9 col-md-8 p-t-30 col-lg-push-3 col-md-push-4&quot;&gt;
+        &lt;div class=&quot;blog-wrapper&quot;&gt;
+          &lt;div class=&quot;posts&quot;&gt;
+            &lt;div class=&quot;post&quot;&gt;
+              &lt;div class=&quot;post-date&quot;&gt;
+                3 &lt;span&gt;Apr&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;post-medias&quot;&gt;
+                &lt;!-- MEDIA CONTENT: IMAGES, AUDIO, VIDEO --&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;post-info&quot;&gt;
+                &lt;h2 class=&quot;post-title&quot;&gt;&lt;a href=&quot;blog-single-left.html&quot;&gt;Post title&lt;/a&gt;&lt;/h2&gt;
+                &lt;div class=&quot;post-excerpt&quot;&gt;
+                  &lt;p&gt;Post excerpt&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;post-meta&quot;&gt;
+                  &lt;div class=&quot;f-left&quot;&gt;
+                    &lt;a href=&quot;&quot; class=&quot;more&quot;&gt;Read More&lt;/a&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;f-right&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;comments&quot;&gt;2 Comments&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;post&quot;&gt;
+              &lt;!-- POST 2 CONTENT --&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sidebar-left col-lg-3 col-md-4 col-lg-pull-9 col-md-pull-8&quot;&gt;
+        &lt;div class=&quot;sidebar-wrapper&quot;&gt;
+          &lt;div class=&quot;widget&quot;&gt;
+            &lt;!-- WIDGET 1 CONTENT --&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>  
+
+<h3>Timeline with right sidebar</h3>
+<p><a class="btn btn-primary" href="../blog-timeline-sidebar-right" target="_blank">Live example</a></p>
+<p>For timeline layout with right sidebar, here is the markup:</p>
+<pre class="prettyprint">&lt;section class=&quot;section-blog blog-timeline&quot;&gt;
+  &lt;div class=&quot;container-large&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div id=&quot;blog-main&quot; class=&quot;col-lg-9 col-md-8 p-t-30&quot;&gt;
+        &lt;div class=&quot;blog-wrapper&quot;&gt;
+          &lt;div class=&quot;posts&quot;&gt;
+            &lt;div class=&quot;post&quot;&gt;
+              &lt;div class=&quot;post-date&quot;&gt;
+                3 &lt;span&gt;Apr&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;post-medias&quot;&gt;
+                &lt;!-- MEDIA CONTENT: IMAGES, AUDIO, VIDEO --&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;post-info&quot;&gt;
+                &lt;h2 class=&quot;post-title&quot;&gt;&lt;a href=&quot;blog-single-left.html&quot;&gt;Post title&lt;/a&gt;&lt;/h2&gt;
+                &lt;div class=&quot;post-excerpt&quot;&gt;
+                  &lt;p&gt;Post excerpt&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;post-meta&quot;&gt;
+                  &lt;div class=&quot;f-left&quot;&gt;
+                    &lt;a href=&quot;&quot; class=&quot;more&quot;&gt;Read More&lt;/a&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;f-right&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;comments&quot;&gt;2 Comments&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;post&quot;&gt;
+              &lt;!-- POST 2 CONTENT --&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sidebar-right col-md-3 col-sm-4&quot;&gt;
+        &lt;div class=&quot;sidebar-wrapper&quot;&gt;
+          &lt;div class=&quot;widget&quot;&gt;
+            &lt;!-- WIDGET 1 CONTENT --&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>  
+
+
+<h2 class="section-title m-t-60">Modern layout</h2>
+<p><a class="btn btn-primary" href="../blog-modern" target="_blank">Live example</a></p>
+<p>Here is the basic markup of modern blog layout:</p>
+<pre class="prettyprint">&lt;section class=&quot;section-blog&quot;&gt;
+  &lt;div class=&quot;posts masonry grid grid-4 no-space&quot;&gt;
+    &lt;div class=&quot;item animated&quot; data-animation=&quot;zoomIn&quot; data-animation-delay=&quot;400&quot;&gt;
+      &lt;div class=&quot;item-wrapper&quot;&gt;
+        &lt;!-- FIGURE CONTENT --&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;item item-wide item-tall animated&quot; data-animation=&quot;zoomIn&quot; data-animation-delay=&quot;600&quot;&gt;
+      &lt;div class=&quot;item-wrapper&quot;&gt;
+        &lt;!-- FIGURE CONTENT --&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>  
+<p>If you want to have a black &amp; white effect on mouseover for images, add <code>black-white-effect</code> class to your figures.</p>
+
+<div class="separator"></div>
+
+<h2 class="section-title">Newspaper layout</h2>
+<p><a class="btn btn-primary" href="../blog-newspaper-3" target="_blank">Live example</a></p>
+<p>Here is the basic markup of newspaper blog layout with 3 columns:</p>
+<pre class="prettyprint">&lt;section class=&quot;section-blog&quot;&gt;
+&lt;div id=&quot;blog-main&quot; class=&quot;container-large&quot;&gt;
+  &lt;div class=&quot;blog-wrapper&quot;&gt;
+    &lt;ul class=&quot;items-filter&quot;&gt;
+      &lt;!-- FILTERS LIST --&gt;
+    &lt;/ul&gt;
+    &lt;div class=&quot;posts masonry masonry-layout grid grid-3&quot;&gt;
+      &lt;div class=&quot;item&quot;&gt;
+        &lt;div class=&quot;item-wrapper&quot;&gt;
+          &lt;div class=&quot;post&quot;&gt;
+            &lt;div class=&quot;post-medias&quot;&gt;
+              &lt;!-- MEDIA CONTENT: IMAGES, AUDIO, VIDEO --&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;post-info&quot;&gt;
+              &lt;h2 class=&quot;post-title&quot;&gt;&lt;a href=&quot;blog-single-left.html&quot;&gt;Post title&lt;/a&gt;&lt;/h2&gt;
+              &lt;ul class=&quot;post-meta&quot;&gt;
+                &lt;li&gt;
+                  by &lt;a href=&quot;#&quot;&gt;Admin&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  on &lt;a href=&quot;#&quot;&gt;January 15, 2016&lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;div class=&quot;post-excerpt&quot;&gt;
+                &lt;p&gt;Post excerpt&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;a href=&quot;&quot; class=&quot;more&quot;&gt;Read More&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;item&quot;&gt;
+        &lt;!-- ITEM 2 CONTENT --&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;</pre>  
+<p>To change number of columns, change <code>grid-3</code> to posts class: grid-2 for 2 columns, grid-4 for 4 columns.</p>
+
+<div class="separator"></div>
+
+<h2 class="section-title">Large image layout</h2>
+<p><a class="btn btn-primary" href="../blog-large-sidebar-right" target="_blank">Live example</a></p>
+<p>Here is the basic markup of large image layout with right sidebar:</p>
+<pre class="prettyprint">&lt;section class=&quot;section-blog&quot;&gt;
+  &lt;div class=&quot;container-large&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div id=&quot;blog-main&quot; class=&quot;col-lg-9 col-md-8&quot;&gt;
+        &lt;div class=&quot;blog-wrapper&quot;&gt;
+          &lt;div class=&quot;posts&quot;&gt;
+            &lt;div class=&quot;post&quot;&gt;
+              &lt;div class=&quot;post-medias&quot;&gt;
+                &lt;!-- MEDIA CONTENT: IMAGES, AUDIO, VIDEO --&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;post-info&quot;&gt;
+                &lt;h2 class=&quot;post-title&quot;&gt;&lt;a href=&quot;blog-single-left.html&quot;&gt;Post title&lt;/a&gt;&lt;/h2&gt;
+                &lt;ul class=&quot;post-meta&quot;&gt;
+                  &lt;li&gt;
+                    by &lt;a href=&quot;#&quot;&gt;Themes Lab&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;
+                    on &lt;a href=&quot;#&quot;&gt;April 3, 2016&lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;div class=&quot;post-excerpt&quot;&gt;
+                  &lt;p&gt;Post excerpt&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;a href=&quot;blog-single-header-image&quot; class=&quot;more&quot;&gt;Read More&lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;post&quot;&gt;
+              &lt;!-- POST 2 CONTENT --&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sidebar-right col-md-3 col-sm-4&quot;&gt;
+        &lt;div class=&quot;sidebar-wrapper&quot;&gt;
+          &lt;div class=&quot;widget&quot;&gt;
+            &lt;!-- WIDGET 1 CONTENT --&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>  
+<p>For left sidebar, here is the markup:</p>
+<pre class="prettyprint">&lt;section class=&quot;section-blog&quot;&gt;
+  &lt;div class=&quot;container-large&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div id=&quot;blog-main&quot; class=&quot;col-lg-9 col-md-8 col-lg-push-3 col-md-push-4&quot;&gt;
+        &lt;!-- BLOG WRAPPER CONTENT --&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sidebar-left col-lg-3 col-md-4 col-lg-pull-9 col-md-pull-8&quot;&gt;
+        &lt;div class=&quot;sidebar-wrapper&quot;&gt;
+          &lt;div class=&quot;widget&quot;&gt;
+            &lt;!-- WIDGET 1 CONTENT --&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>  
+
+<div class="separator"></div>
+
+<h2 class="section-title">Left image layout</h2>
+<p><a class="btn btn-primary" href="../blog-side-image-sidebar-right" target="_blank">Live example</a></p>
+<p>Here is the basic markup of large image layout with right sidebar:</p>
+<pre class="prettyprint">&lt;section class=&quot;section-blog blog-square&quot;&gt;
+  &lt;div class=&quot;container-large&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div id=&quot;blog-main&quot; class=&quot;col-lg-9 col-md-8 p-t-30&quot;&gt;
+        &lt;div class=&quot;blog-wrapper&quot;&gt;
+          &lt;div class=&quot;posts&quot;&gt;
+            &lt;div class=&quot;post&quot;&gt;
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-md-4&quot;&gt;
+                  &lt;div class=&quot;post-medias&quot;&gt;
+                    &lt;!-- MEDIA CONTENT: IMAGES, AUDIO, VIDEO --&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-8&quot;&gt;
+                  &lt;div class=&quot;post-info&quot;&gt;
+                    &lt;h2 class=&quot;post-title&quot;&gt;&lt;a href=&quot;post-link.html&quot;&gt;Post title&lt;/a&gt;&lt;/h2&gt;
+                    &lt;ul class=&quot;post-meta&quot;&gt;
+                      &lt;li&gt;
+                        by &lt;a href=&quot;#&quot;&gt;Themes Lab&lt;/a&gt;
+                      &lt;/li&gt;
+                      &lt;li&gt;
+                        on &lt;a href=&quot;#&quot;&gt;April 3, 2016&lt;/a&gt;
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;div class=&quot;post-excerpt&quot;&gt;
+                      &lt;p&gt;Post excerpt&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;a href=&quot;post-link.html&quot; class=&quot;more&quot;&gt;Read More&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;              
+            &lt;/div&gt;
+            &lt;div class=&quot;post&quot;&gt;
+              &lt;!-- POST 2 CONTENT --&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sidebar-right col-md-3 col-sm-4&quot;&gt;
+        &lt;div class=&quot;sidebar-wrapper&quot;&gt;
+          &lt;div class=&quot;widget&quot;&gt;
+            &lt;!-- WIDGET 1 CONTENT --&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>  
+<p>For left sidebar, here is the markup:</p>
+<pre class="prettyprint">&lt;section class=&quot;section-blog blog-square&quot;&gt;
+  &lt;div class=&quot;container-large&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div id=&quot;blog-main&quot; class=&quot;col-lg-9 col-md-8 col-lg-push-3 col-md-push-4 p-t-30&quot;&gt;
+        &lt;div class=&quot;blog-wrapper&quot;&gt;
+          &lt;!-- BLOG WRAPPER CONTENT --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sidebar-left col-lg-3 col-md-4 col-lg-pull-9 col-md-pull-8&quot;&gt;
+        &lt;div class=&quot;sidebar-wrapper&quot;&gt;
+          &lt;div class=&quot;widget&quot;&gt;
+            &lt;!-- WIDGET 1 CONTENT --&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>  
+
+<div class="separator"></div>
+
+<h2 class="section-title">Filtering items</h2>
+<p>Basic markup for filtering items:</p>
+  <pre class="prettyprint">&lt;ul class=&quot;items-filter&quot;&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot; data-filter=&quot;.filter-1&quot;&gt;Filter 1&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot; data-filter=&quot;.filter-2&quot;&gt;Filter 2&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot; data-filter=&quot;.filter-3&quot;&gt;Filter 3&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot; data-filter=&quot;.filter-4&quot;&gt;Filter 4&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;filter-all&quot;&gt;
+    &lt;a href=&quot;#&quot; data-filter=&quot;*&quot; class=&quot;current&quot;&gt;All Categories&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</pre>  
+<p>For filter posts by category, add category class to each post. For example, if you have a filter "design" and want to make a post in this category, add <code>design</code> class to your item</p>
+  <pre class="prettyprint">&lt;div class=&quot;item design&quot;&gt;
+  &lt;!-- ITEM CONTENT --&gt;
+&lt;/div&gt;</pre>  
+</section>
+
+<div class="separator"></div>
+
+<h2 class="section-title">Pagination</h2>
+<p>Place your pagination html markup right after your posts list</p>
+  <pre class="prettyprint">&lt;div class=&quot;posts&quot;&gt;
+  &lt;!-- YOUR POSTS LIST --&gt;
+&lt;/div&gt;
+&lt;nav class=&quot;pagination-wrapper&quot;&gt;
+  &lt;ul class=&quot;pagination&quot;&gt;
+    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;#&quot; aria-label=&quot;Next&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot;&gt;&lt;i class=&quot;nc-icon-outline arrows-1_tail-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>  
+<p>For filter posts by category, add category class to each post. For example, if you have a filter "design" and want to make a post in this category, add <code>design</code> class to your item</p>
+  <pre class="prettyprint">&lt;div class=&quot;item design&quot;&gt;
+  &lt;!-- ITEM CONTENT --&gt;
+&lt;/div&gt;</pre>  
+
+
+
+
+

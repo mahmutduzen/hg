@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# RewriteBase /
+# RewriteRule ^$ http://themes-lab.com/engage/_documentation/index.html [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]

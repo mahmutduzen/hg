@@ -1,0 +1,124 @@
+<div class="title">
+  <h1>Post Comments</h1>
+</div>
+<p>Post can have html comments, or load comments via Facebook or Disqus.</p>
+
+<h2 class="section-title m-t-60">Html comment</h2>
+<p><a class="btn btn-primary" href="../blog-single-header-image#comments" target="_blank">Live example</a></p>
+<p>You can create nested comments, which mean that someone can answer to previous comment.</p>
+<pre class="prettyprint">&lt;section class=&quot;post-comments&quot; id=&quot;comments&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-sm-8 col-sm-offset-2&quot;&gt;
+        &lt;h3&gt;3 Comments&lt;/h3&gt;
+        &lt;div class=&quot;media&quot;&gt;
+          &lt;a class=&quot;pull-left&quot; href=&quot;#&quot;&gt;
+            &lt;img class=&quot;media-object img-fluid img-circle&quot; src=&quot;path-user-img-1.jpg&quot; alt=&quot;&quot;&gt;
+          &lt;/a&gt;
+          &lt;div class=&quot;media-body&quot;&gt;
+              &lt;h4&gt;User 1
+                &lt;small&gt;April 20, 2016 at 9:30 PM&lt;/small&gt;
+              &lt;/h4&gt;
+              &lt;p&gt;Comments content.&lt;/p&gt;
+              &lt;!-- Nested Comment --&gt;
+              &lt;div class=&quot;media&quot;&gt;
+                &lt;a class=&quot;pull-left&quot; href=&quot;#&quot;&gt;
+                    &lt;img class=&quot;media-object img-fluid img-circle&quot; src=&quot;path-user-img-2.jpg&quot; alt=&quot;&quot;&gt;
+                &lt;/a&gt;
+                &lt;div class=&quot;media-body&quot;&gt;
+                  &lt;h4&gt;User 2
+                      &lt;small&gt;April 21, 2016 at 10:30 PM&lt;/small&gt;
+                  &lt;/h4&gt;
+                  &lt;p&gt;Comments content.&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;!-- End Nested Comment --&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;media&quot;&gt;
+          &lt;a class=&quot;pull-left&quot; href=&quot;#&quot;&gt;
+            &lt;img class=&quot;media-object img-fluid img-circle&quot; src=&quot;path-user-img-3.jpg&quot; alt=&quot;&quot;&gt;
+          &lt;/a&gt;
+          &lt;div class=&quot;media-body&quot;&gt;
+              &lt;h4&gt;User 3
+                &lt;small&gt;April 25, 2016 at 9:30 PM&lt;/small&gt;
+              &lt;/h4&gt;
+              &lt;p&gt;Comments content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;leave-comment&quot;&gt;
+          &lt;h3&gt;Leave a Comment&lt;/h3&gt;
+          &lt;form class=&quot;comment-form text-center&quot;&gt;
+            &lt;div class=&quot;row m-b-20&quot;&gt;
+              &lt;div class=&quot;col-md-6&quot;&gt;
+                &lt;input id=&quot;name&quot; class=&quot;input-lg form-control&quot; type=&quot;text&quot; required=&quot;required&quot; name=&quot;name&quot; placeholder=&quot;Name&quot;&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;col-md-6&quot;&gt;
+                 &lt;input id=&quot;email&quot; class=&quot;input-lg form-control&quot; type=&quot;text&quot; required=&quot;required&quot; name=&quot;email&quot; placeholder=&quot;Email&quot;&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;input id=&quot;subject&quot; class=&quot;input-lg form-control m-b-20&quot; type=&quot;text&quot; required=&quot;required&quot; name=&quot;subject&quot; placeholder=&quot;Subject&quot;&gt;
+            &lt;textarea id=&quot;message&quot; class=&quot;form-control&quot; rows=&quot;10&quot; name=&quot;message&quot; placeholder=&quot;Message&quot;&gt;&lt;/textarea&gt;
+            &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Submit Comment&lt;/button&gt;
+          &lt;/form&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>
+
+<h2 class="section-title m-t-60">Facebook comments</h2>
+<p><a class="btn btn-primary" href="../blog-single-comments-facebook" target="_blank">Live example</a></p>
+<p>It's very simple to add Facebook comments since it's just 1 line of code.</p>
+<pre class="prettyprint">&lt;section class=&quot;post-comments&quot; id=&quot;comments&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-sm-8 col-sm-offset-2&quot;&gt;
+        &lt;div class=&quot;fb-comments&quot; data-href=&quot;current-url.html&quot; data-width=&quot;100%&quot; data-numposts=&quot;5&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>
+<p>Facebook comments have various settings, such as number of comments display with <code>data-numposts</code>.<br>
+You will find additional information of Facebook plugin documentation <a href="https://developers.facebook.com/docs/plugins/comments" target="_blank">here</a>.</p>
+<div class="alert alert-info" role="alert">
+  <strong>NB</strong>: Don't forget to include Facebook script as well at the bottom of your page. To get it, click on <code>get code</code> button in Facebook comments plugin page.
+</div>
+<p>Facebook script looks like this (don't use it, it's just an example):</p>
+<pre class="prettyprint">&lt;div id=&quot;fb-root&quot;&gt;&lt;/div&gt;
+&lt;script&gt;(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = &quot;//connect.facebook.net/fr_FR/sdk.js#xfbml=1&amp;version=v2.4&amp;appId=699253173491854&quot;;
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));&lt;/script&gt;</pre>
+
+<h2 class="section-title m-t-60">Disqus comments</h2>
+<p><a class="btn btn-primary" href="../blog-single-comments-disqus" target="_blank">Live example</a></p>
+<p>In the same way as Facebook comments, Disqus comments are easy to use. Include 1 line of code and specific script</p>
+<pre class="prettyprint">&lt;section class=&quot;post-comments&quot; id=&quot;comments&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-sm-8 col-sm-offset-2&quot;&gt;
+        &lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>
+<p>Facebook comments have various settings, such as number of comments display with <code>data-numposts</code>.<br>
+You will find additional information of Facebook plugin documentation <a href="https://developers.facebook.com/docs/plugins/comments" target="_blank">here</a>.</p>
+<div class="alert alert-info" role="alert">
+  <strong>NB</strong>: Don't forget to include Disqus script as well at the bottom of your page. To get it, create an account on Disqus website <a href="https://publishers.disqus.com/" target="_blank">here</a>.
+</div>
+<p>Disqus script looks like this (don't use it, it's just an example):</p>
+<pre class="prettyprint">&lt;script type=&quot;text/javascript&quot;&gt;
+/* CONFIGURATION VARIABLES, REPLACE WITH YOUR REAL DISQUS SHORTNAME */
+var disqus_shortname = 'your-disqus-name';
+/* DON'T EDIT BELOW THIS LINE */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+&lt;/script&gt;</pre>

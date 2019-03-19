@@ -1,0 +1,134 @@
+<div class="title">
+  <h1>Top Navigation</h1>
+</div>
+<p>Top navigation have a large set of options and possibilities.</p>
+<p>Top navigation can have a transparent, light or dark background, with light or dark text color, submenu light or dark.</p>
+<p>You can add a topbar too with various widgets.</p>
+
+<section>
+  <p><a class="btn btn-primary" href="../nav-top-transparent" target="_blank">Live example</a></p>
+
+  <h3>Basic markup</h3>
+  <p>Here is the basic markup of top navigation with menu align right.</p>
+    <pre class="prettyprint">&lt;header id=&quot;main-navigation&quot;&gt;
+  &lt;div class=&quot;main-nav-wrapper&quot;&gt;
+    &lt;div class=&quot;container-fluid&quot;&gt;
+      &lt;div class=&quot;nav-left&quot;&gt;
+        &lt;div id=&quot;logo&quot;&gt;
+          &lt;!-- YOUR LOGO IMAGE --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;nav-right&quot;&gt;
+        &lt;nav id=&quot;main-menu&quot;&gt;
+          &lt;!-- YOUR MENU --&gt;
+        &lt;/nav&gt;
+        &lt;ul class=&quot;nav-tools&quot;&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+</pre>  
+
+  <h3>Customize navigation background color</h3>
+  <p>To have transparent navigation, add <code>header-transparent</code> class to your body:</p>
+  <pre class="prettyprint">&lt;body class=&quot;header-transparent&quot;&gt;</pre>  
+  <p>To have navigation with light background, add <code>header-light</code> class to your body:</p>
+  <pre class="prettyprint">&lt;body class=&quot;header-light&quot;&gt;</pre>  
+  <p>To have transparent navigation, add <code>header-dark</code> class to your body:</p>
+  <pre class="prettyprint">&lt;body class=&quot;header-dark&quot;&gt;</pre>  
+  <p>By default, when you scroll page, background is white. <br> To have dark background when you scroll page, add <code>header-scroll-dark</code> class to your body:</p>
+  <pre class="prettyprint">&lt;body class=&quot;header-scroll-dark&quot;&gt;</pre>  
+
+  <h3>Customize background submenu color</h3>
+  <p>By default, submenu background is white.<br> To have submenu with dark background, add <code>submenu-dark</code> class to your main-navigation id:</p>
+  <pre class="prettyprint">&lt;header id=&quot;main-navigation&quot; class=&quot;submenu-dark&quot;&gt;</pre> 
+  <h3>Basic submenu markup</h3>
+  <p>Basic submenu display as a vertical list. You can add as many levels as you want.</p>
+  <pre class="prettyprint">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;Menu title&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li class=&quot;submenu&quot;&gt;
+        &lt;a href=&quot;link-1&quot;&gt;Submenu title&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li class=&quot;submenu&quot;&gt;
+            &lt;a href=&quot;link-2&quot;&gt;Sub submenu title&lt;/a&gt;
+            &lt;ul&gt;
+              &lt;li&gt;
+                &lt;a href=&quot;link-3&quot;&gt;Sub submenu 1&lt;/a&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</pre>   
+  <h3>Megamenu submenu markup</h3>
+  <p>Megamenu content will display as an horizontal list. You can add up to 5 horizontal columns per menu.</p>
+  <pre class="prettyprint">&lt;ul&gt;
+  &lt;li class=&quot;mega-menu&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;Menu&lt;/a&gt;
+    &lt;div class=&quot;mega-menu-content col-5 clearfix&quot;&gt;
+      &lt;ul&gt;
+        &lt;li&gt;
+          &lt;a class=&quot;menu-title&quot; href=&quot;#&quot;&gt;Menu title 1&lt;/a&gt;
+          &lt;ul&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;link-1&quot;&gt;Submenu 1 column 1&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;link-2&quot;&gt;Submenu 2 column 1&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;ul&gt;
+        &lt;li&gt;
+          &lt;a class=&quot;menu-title&quot; href=&quot;#&quot;&gt;Menu title 2&lt;/a&gt;
+          &lt;ul&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;link-3&quot;&gt;Submenu 3 column 2&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;ul&gt;
+        &lt;li&gt;
+          &lt;a class=&quot;menu-title&quot; href=&quot;#&quot;&gt;Menu title 3&lt;/a&gt;
+          &lt;ul&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;link-4&quot;&gt;Submenu 4 column 3&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;ul&gt;
+        &lt;li&gt;
+          &lt;a class=&quot;menu-title&quot; href=&quot;#&quot;&gt;Menu title 4&lt;/a&gt;
+          &lt;ul&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;link-5&quot;&gt;Submenu 5 column 4&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;ul&gt;
+        &lt;li&gt;
+          &lt;a class=&quot;menu-title&quot; href=&quot;#&quot;&gt;Menu title 5&lt;/a&gt;
+          &lt;ul&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;link-6&quot;&gt;Submenu 6 column 5&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</pre>   
+</section>
+
+
+
+

@@ -1,0 +1,141 @@
+<div class="title">
+  <h1>Team</h1>
+  <p>Carefully crafted elements to create beautiful design.</p>
+</div>
+<p>
+  <a class="btn btn-primary" href="../shortcodes-team" target="_blank">Live example</a>
+</p>
+
+<h3>Basic markup</h3>
+<p>
+  <img src="img/screenshots/team.jpg" class="img-fluid no-bd" alt="team" />
+</p>
+<pre class="prettyprint">
+&lt;div class=&quot;team&quot;&gt;
+  &lt;div class=&quot;team-img&quot;&gt;
+    &lt;figure class=&quot;he-3&quot;&gt;
+      &lt;img class=&quot;img-front&quot; src=&quot;team-img-1.jpg&quot; alt=&quot;&quot;&gt;
+      &lt;img class=&quot;img-back&quot; src=&quot;team-img-2.jpg&quot; alt=&quot;&quot;&gt;
+      &lt;div class=&quot;hover-icons&quot;&gt;
+        &lt;div class=&quot;hover-icons-wrapper&quot;&gt;
+          &lt;a href=&quot;#&quot;&gt;
+            &lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;
+          &lt;/a&gt;
+          &lt;a href=&quot;#&quot;&gt;
+            &lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;
+          &lt;/a&gt;
+          &lt;a href=&quot;#&quot;&gt;
+            &lt;i class=&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;team-info&quot;&gt;
+    &lt;div class=&quot;team-name&quot;&gt;
+      Name
+    &lt;/div&gt;
+    &lt;div class=&quot;team-job&quot;&gt;
+      Job
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+<p>If you don't want to have a second image effect on mouse hover, place same image in img-front and img-back.</p>
+
+<div class="separator"></div>
+
+<h3>Boxed layout</h3>
+<p>
+  <img src="img/screenshots/team-boxed.jpg" class="img-fluid no-bd" alt="team" />
+</p>
+<pre class="prettyprint">
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;div class=&quot;team team-aside team-left&quot;&gt;
+      &lt;div class=&quot;team-img&quot;&gt;
+        &lt;img src=&quot;team-1.jpg&quot; alt=&quot;people&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;team-info grey lighten-4&quot;&gt;
+        &lt;div class=&quot;team-name&quot;&gt;
+          Name 1
+        &lt;/div&gt;
+        &lt;div class=&quot;team-job&quot;&gt;
+          Job 1
+        &lt;/div&gt;
+        &lt;p&gt;Description 1&lt;/p&gt;
+        &lt;!-- SOCIAL MARKUP: OPTIONAL --&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;div class=&quot;team team-aside team-left team-dark&quot;&gt;
+      &lt;div class=&quot;team-img&quot;&gt;
+        &lt;img src=&quot;team-2.jpg&quot; alt=&quot;people&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;team-info grey darken-4&quot;&gt;
+        &lt;div class=&quot;team-name&quot;&gt;
+          Name 2
+        &lt;/div&gt;
+        &lt;div class=&quot;team-job&quot;&gt;
+          Job 2
+        &lt;/div&gt;
+        &lt;p&gt;Description 2&lt;/p&gt;
+        &lt;!-- SOCIAL MARKUP: OPTIONAL --&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;div class=&quot;team team-aside team-right team-dark&quot;&gt;
+      &lt;div class=&quot;team-info grey darken-4&quot;&gt;
+        &lt;div class=&quot;team-name&quot;&gt;
+          Name 3
+        &lt;/div&gt;
+        &lt;div class=&quot;team-job&quot;&gt;
+          Job 3
+        &lt;/div&gt;
+        &lt;p&gt;Description 3&lt;/p&gt;
+        &lt;!-- SOCIAL MARKUP: OPTIONAL --&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;team-img&quot;&gt;
+        &lt;img src=&quot;team-3.jpg&quot; alt=&quot;people&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;div class=&quot;team team-aside team-right&quot;&gt;
+      &lt;div class=&quot;team-info grey lighten-4&quot;&gt;
+        &lt;div class=&quot;team-name&quot;&gt;
+          Name 4
+        &lt;/div&gt;
+        &lt;div class=&quot;team-job&quot;&gt;
+          Job 4
+        &lt;/div&gt;
+        &lt;p&gt;Description 4&lt;/p&gt;
+        &lt;!-- SOCIAL MARKUP: OPTIONAL --&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;team-img&quot;&gt;
+        &lt;img src=&quot;team-4.jpg&quot; alt=&quot;people&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+<p>You can add social icons for each team member</p>
+<pre class="prettyprint">
+&lt;div class=&quot;team-social icon-rounded icon-hover icon-line icon-sm&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;icon-google-plus&quot; data-toggle=&quot;tooltip&quot; title=&quot;Google&quot;&gt;
+    &lt;i class=&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;icon-facebook&quot; data-toggle=&quot;tooltip&quot; title=&quot;Facebook&quot;&gt;
+    &lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;icon-youtube&quot; data-toggle=&quot;tooltip&quot; title=&quot;Youtube&quot;&gt;
+    &lt;i class=&quot;fa fa-youtube&quot;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;icon-vimeo&quot; data-toggle=&quot;tooltip&quot; title=&quot;Vimeo&quot;&gt;
+    &lt;i class=&quot;fa fa-vimeo&quot;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/div&gt;</pre>

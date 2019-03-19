@@ -1,0 +1,60 @@
+<div class="title">
+  <h1>Counters</h1>
+  <p>Animated up and down effect.</p>
+</div>
+<p>
+  <a class="btn btn-primary" href="../shortcodes-counters" target="_blank">Live example</a>
+</p>
+
+<h2>Count Up</h2>
+<p>
+  <img src="img/screenshots/countup.jpg" class="img-fluid no-bd" alt="counter" />
+</p>
+<p>Theme use CountTo plugin. For more information about it, please visit <a href="https://github.com/mhuggins/jquery-countTo" target="_blank">plugin official website</a>.</p>
+
+<h3>Count Up markup</h3>
+<pre class="prettyprint">
+&lt;div class=&quot;counter&quot;&gt;
+  &lt;i class=&quot;nc-icon-outline food_coffee&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;countup&quot; data-from=&quot;0&quot; data-to=&quot;1354&quot; data-speed=&quot;1000&quot;&gt;0&lt;/div&gt;
+  &lt;p class=&quot;count-title&quot;&gt;Cups of coffee&lt;/p&gt;
+  &lt;p class=&quot;count-subtitle&quot;&gt;To think fast and fine&lt;/p&gt;
+&lt;/div&gt;</pre>
+
+<p>Icon, title and subtitle are optional.</p>
+<p>Countup have 3 parameters:</p>
+<p><strong>data-from</strong>: begin number</p>
+<p><strong>data-to</strong>: end number</p>
+<p><strong>data-spped</strong>: speed in millisecond</p>
+
+<h3>Count Up size</h3>
+<p>For bigger count up style, add <code>counter-lg</code> class to counter element:</p>
+<pre class="prettyprint">
+&lt;div class=&quot;counter counter-lg&quot;&gt;
+  &lt;i class=&quot;nc-icon-outline emoticons_quite-happy&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;countup&quot; data-from=&quot;0&quot; data-to=&quot;1354&quot; data-speed=&quot;1000&quot;&gt;0&lt;/div&gt;
+  &lt;p class=&quot;count-title&quot;&gt;Satisfied customers&lt;/p&gt;
+  &lt;p class=&quot;count-subtitle&quot;&gt;Carefully craft design&lt;/p&gt;
+&lt;/div&gt;</pre>
+
+<div class="separator"></div>
+
+<h2>Countdown</h2>
+<p>
+  <img src="img/screenshots/countdown.jpg" class="img-fluid no-bd" alt="counter" />
+</p>
+<p>Theme use Countdown plugin. For more information about it, please visit <a href="http://hilios.github.io/jQuery.countdown/" target="_blank">plugin official website</a>.</p>
+
+<h3>Countdown markup</h3>
+<pre class="prettyprint">
+&lt;div class=&quot;countdown&quot; data-date=&quot;2020/10/10&quot;&gt;&lt;/div&gt;</pre>
+
+<p>Countdown have only 1 parameter: date. Change value to date you want.</p>
+
+<h3>Inline countdown</h3>
+<p>
+  <img src="img/screenshots/countdown-inline.jpg" class="img-fluid no-bd" alt="counter" />
+</p>
+<p>For inline countdown, add <code>countdown-inline</code> class to countdown element. Example:</p>
+<pre class="prettyprint">
+&lt;div&gt;This offer will end in: &lt;div class=&quot;countdown countdown-inline&quot; data-date=&quot;2016/10/10&quot;&gt;&lt;/div&gt;&lt;/div&gt;</pre>

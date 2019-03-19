@@ -1,0 +1,161 @@
+<div class="title">
+  <h1>Products list</h1>
+</div>
+<p>
+  <a href="../shop-sidebar-left" target="_blank">
+    <img src="img/screenshots/products.jpg" alt="ecommerce"/>
+  </a>
+</p>
+<p>
+  Products list can be fullwidth or boxed, with various columns (2, 3, 4, 5 or 6). You can add a sidebar with multiples ecommerce widgets too.
+</p>
+
+<h2 class="section-title m-t-60">Product markup</h2>
+<p>
+  <a href="../shop-sidebar-left" target="_blank">
+    <img src="img/screenshots/product.jpg" alt="ecommerce"/>
+  </a>
+</p>
+<p>Here is the basic markup of list of a product inside a products list:</p>
+<pre class="prettyprint">&lt;div class=&quot;product&quot;&gt;
+  &lt;div class=&quot;product-img&quot;&gt;
+    &lt;ul class=&quot;product-wrapper&quot;&gt;
+      &lt;li class=&quot;selected&quot;&gt;
+        &lt;a href=&quot;shop-single&quot;&gt;
+        &lt;img src=&quot;img-1.png&quot; alt=&quot;&quot;&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;move-right&quot; data-sale=&quot;true&quot; data-price=&quot;$22.95&quot;&gt;
+        &lt;a href=&quot;shop-single&quot;&gt;
+        &lt;img src=&quot;img-2.png&quot; alt=&quot;&quot;&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;shop-single&quot;&gt;
+        &lt;img src=&quot;img-3.png&quot; alt=&quot;&quot;&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;product-overlay&quot;&gt;
+    &lt;div class=&quot;overlay-content&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-6 product-quickview&quot;&gt; 
+          &lt;a href=&quot;quickview-product-path.html&quot;&gt;
+          &lt;i class=&quot;line-icon-eye&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; data-html=&quot;true&quot; title=&quot;&lt;p&gt;Quickview&lt;/p&gt;&quot;&gt;&lt;/i&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-6 product-wishlist&quot;&gt;
+          &lt;i class=&quot;fa fa-heart-o&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; data-html=&quot;true&quot; title=&quot;&lt;p&gt;Add to Wishlist&lt;/p&gt;&quot;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;product-info&quot;&gt;
+    &lt;p class=&quot;product-name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Product name&lt;/a&gt;&lt;/p&gt;
+    &lt;p class=&quot;product-price&quot;&gt;$26.85&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;product-info&quot;&gt;
+    &lt;div class=&quot;product-rating&quot;&gt;
+      &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;fa fa-star-half-o&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;a href=&quot;#&quot; class=&quot;add-to-cart&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; data-html=&quot;true&quot; title=&quot;&lt;p&gt;Add to Cart&lt;/p&gt;&quot;&gt;Add to cart&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>  
+
+<div class="separator"></div>
+
+<h2 class="section-title m-t-60">Pagination markup</h2>
+<p>Here is the basic markup of list of a product inside a products list:</p>
+<pre class="prettyprint">&lt;nav class=&quot;pagination-wrapper&quot;&gt;
+  &lt;ul class=&quot;pagination&quot;&gt;
+    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;#&quot; aria-label=&quot;Next&quot;&gt;
+      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;i class=&quot;nc-icon-outline arrows-1_tail-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>  
+
+<div class="separator"></div>
+
+<h2 class="section-title">Products with left sidebar</h2>
+<p>Here is the basic markup of list of products with left sidebar:</p>
+<pre class="prettyprint">&lt;div id=&quot;shop&quot; class=&quot;shop-list&quot;&gt;
+  &lt;!-- BEGIN TOP SORTING OPTIONS --&gt;
+  &lt;div class=&quot;sort-options&quot;&gt;
+    &lt;!-- TOP SORTING MARKUP --&gt;
+  &lt;/div&gt;
+  &lt;!-- END TOP SORTING OPTIONS --&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;!-- BEGIN PRODUCTS LIST --&gt;
+    &lt;div class=&quot;products-list col-hg-10 col-lg-9 col-md-8 col-hg-push-2 col-lg-push-3 col-md-push-4&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-hg-3 col-lg-4 col-sm-6&quot;&gt;
+          &lt;!-- PRODUCT 1 --&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-hg-3 col-lg-4 col-sm-6&quot;&gt;
+          &lt;!-- PRODUCT 2 --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!-- PAGINATION MARKUP --&gt;
+    &lt;/div&gt;
+    &lt;!-- END PRODUCTS LIST --&gt;  
+
+    &lt;!-- BEGIN PRODUCTS SIDEBAR --&gt;
+    &lt;aside class=&quot;products-sidebar col-hg-2 col-lg-3 col-md-4 col-hg-pull-10 col-lg-pull-9 col-md-pull-8&quot;&gt;
+      &lt;div class=&quot;widget&quot;&gt;
+        &lt;h3 class=&quot;widget-title&quot;&gt;Widget title&lt;/h3&gt;
+        &lt;!-- WIDGET CONTENT --&gt;
+      &lt;/div&gt;
+      &lt;!-- OTHER WIDGETS CONTENT --&gt;
+    &lt;/aside&gt;
+    &lt;!-- BEGIN END SIDEBAR --&gt;      
+  &lt;/div&gt;
+&lt;/div&gt;</pre>  
+
+<div class="separator"></div>
+
+<h2 class="section-title">Products with right sidebar</h2>
+<p>Here is the basic markup of list of products with right sidebar:</p>
+<pre class="prettyprint">&lt;div id=&quot;shop&quot; class=&quot;shop-list&quot;&gt;
+  &lt;!-- BEGIN TOP SORTING OPTIONS --&gt;
+  &lt;div class=&quot;sort-options&quot;&gt;
+    &lt;!-- TOP SORTING MARKUP --&gt;
+  &lt;/div&gt;
+  &lt;!-- END TOP SORTING OPTIONS --&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;!-- BEGIN PRODUCTS LIST --&gt;
+    &lt;div class=&quot;products-list col-hg-10 col-lg-9 col-md-8&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-hg-3 col-lg-4 col-sm-6&quot;&gt;
+          &lt;!-- PRODUCT 1 --&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-hg-3 col-lg-4 col-sm-6&quot;&gt;
+          &lt;!-- PRODUCT 2 --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!-- PAGINATION MARKUP --&gt;
+    &lt;/div&gt;
+    &lt;!-- END PRODUCTS LIST --&gt;      
+
+    &lt;!-- BEGIN PRODUCTS SIDEBAR --&gt;
+    &lt;aside class=&quot;products-sidebar col-hg-2 col-lg-3 col-md-4&quot;&gt;
+      &lt;div class=&quot;widget&quot;&gt;
+        &lt;h3 class=&quot;widget-title&quot;&gt;Widget title&lt;/h3&gt;
+        &lt;!-- WIDGET CONTENT --&gt;
+      &lt;/div&gt;
+      &lt;!-- OTHER WIDGETS CONTENT --&gt;
+    &lt;/aside&gt;
+    &lt;!-- BEGIN END SIDEBAR --&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>  

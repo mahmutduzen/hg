@@ -1,0 +1,40 @@
+<div class="title">
+  <h1>Custom fonts</h1>
+  <p>Carefully craft typography to create beautiful design</p>
+</div>
+<p>
+  <a class="btn btn-primary" href="../shortcodes-fonts" target="_blank">Live example</a>
+</p>
+
+<p>Theme includes various font: Open Sans (default), Satisfy (handwritting), Sumana (typing style) and Montserrat for headings.</p>
+
+<h3>How to use custom fonts?</h3>
+
+<p>To use Sumana font, add <code>font-sumana</code> class to your element.</p>
+<pre class="prettyprint">
+&lt;div class=&quot;font-sumana&quot;&gt;
+  &lt;p&gt;Your text here.&lt;/p&gt;
+  &lt;p&gt;Other text here.&lt;/p&gt;
+&lt;/div&gt;</pre>
+
+<p>To use Satisfy font, use <code>font-handwriting</code> class.</p>
+<p>To use Satisfy font, use <code>font-handwriting</code> class.</p>
+<p>To use Montserrat font, use <code>font-montserrat</code> class.</p>
+
+<div class="separator"></div>
+
+<h3>Add new fonts</h3>
+
+<p>You can add new fonts. Easiest way is to use Google fonts: <a href="https://www.google.com/fonts" target="_blank">https://www.google.com/fonts</a>.</p>
+<p>For example, to add Roboto font, add this code in head of theme:</p>
+<pre class="prettyprint">
+&lt;link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'&gt;</pre>
+<p>Then, you can create a new class in your css file, for example:</p>
+<pre class="prettyprint">
+.font-roboto {font-family: 'Roboto',arial;}</pre>
+<p>Now you just have to wrap your text inside this class, like previously:</p>
+<pre class="prettyprint">
+&lt;div class=&quot;font-roboto&quot;&gt;
+  &lt;p&gt;Your text here.&lt;/p&gt;
+  &lt;p&gt;Other text here.&lt;/p&gt;
+&lt;/div&gt;</pre>

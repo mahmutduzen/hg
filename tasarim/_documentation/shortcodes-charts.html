@@ -1,0 +1,61 @@
+<div class="title">
+  <h1>Charts</h1>
+  <p>Simple, clean and engaging charts.</p>
+</div>
+<p>
+  <a class="btn btn-primary" href="../shortcodes-charts" target="_blank">Live example</a>
+</p>
+
+<p>Theme use ChartJS plugin. For more information about this plugin, please visit <a href="http://www.chartjs.org/" target="_blank">ChartJS official website</a></p>
+
+<h3>Html markup</h3>
+<p>Html markup is very simple. Just add a canvas element with a specific id like that:</p>
+<pre class="prettyprint">
+&lt;canvas id=&quot;my-chart&quot;&gt;&lt;/canvas&gt;</pre>
+
+<div class="separator"></div>
+
+<h3>Create your chart with javascript</h3>
+<p>To create a chart, we need to instantiate the Chart id. You will find all information in official plugin website <a href="http://www.chartjs.org/docs/" target="_blank">here</a>. You can check js file that manage charts shortcode page too <code>assets/js/charts.js</code> file. Your code will look like this:</p>
+<pre class="prettyprint">
+var donutData = [
+    {value: 300, color:&quot;rgba(226, 120, 93,0.9)&quot;, highlight: &quot;rgba(226, 120, 93,1)&quot;, label: &quot;Orange&quot;},
+    {value: 40, color: &quot;rgba(54, 173, 199,0.9)&quot;, highlight: &quot;rgba(54, 173, 199,1)&quot;, label: &quot;Blue&quot;},
+    {value: 100,color: &quot;rgba(255, 200, 112,0.9)&quot;, highlight: &quot;rgba(255, 200, 112,1)&quot;, label: &quot;Yellow&quot;}
+];  
+window.myPie = new Chart(document.getElementById(&quot;donut-chart&quot;).getContext(&quot;2d&quot;)).Pie(donutData, {
+    responsive: true,
+    tooltipCornerRadius: 0
+});</pre>
+
+<div class="separator"></div>
+
+<h2>Charts type</h2>
+<p>ChartJS include a wide range of chart type: line chart, radar chart, bar chart, pie chart...</p>
+
+<h3>Line Chart</h3>
+<p>
+  <img src="img/screenshots/chart-line.jpg" class="img-fluid" alt="chart" />
+</p>
+
+<h3>Bar Chart</h3>
+<p>
+  <img src="img/screenshots/chart-bar.jpg" class="img-fluid" alt="chart" />
+</p>
+
+<h3>Radar Chart</h3>
+<p>
+  <img src="img/screenshots/chart-radar.jpg" class="img-fluid" alt="chart" />
+</p>
+
+<h3>Pie Chart</h3>
+<p>
+  <img src="img/screenshots/chart-donut.jpg" class="img-fluid" alt="chart" />
+</p>
+
+<h3>Polar Chart</h3>
+<p>
+  <img src="img/screenshots/chart-polar.jpg" class="img-fluid" alt="chart" />
+</p>
+
+

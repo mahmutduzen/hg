@@ -1,0 +1,126 @@
+<div class="title">
+  <h1>Pricing tables</h1>
+  <p>Show your services plan in an attractive way.</p>
+</div>
+<a class="btn btn-primary" href="../shortcodes-pricing-tables" target="_blank">See live example</a>
+
+<h3>Default markup</h3>
+<p>
+  <img src="img/screenshots/pricing-default.jpg" class="img-fluid no-bd" alt="pricing" />
+</p>
+<pre class="prettyprint">
+&lt;div class=&quot;price-plan plan-boxed&quot;&gt;
+  &lt;div class=&quot;plan-wrapper&quot;&gt;
+    &lt;div class=&quot;plan-header&quot;&gt;
+      &lt;div class=&quot;plan-title&quot;&gt;Basic&lt;/div&gt;
+      &lt;div class=&quot;price&quot;&gt;
+        &lt;div class=&quot;price-wrapper&quot;&gt;
+          &lt;span class=&quot;price-symbol&quot;&gt;$&lt;/span&gt;
+          &lt;span class=&quot;price-value&quot;&gt;17&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;price-description&quot;&gt;
+          / month
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;plan-info&quot;&gt;
+      &lt;div class=&quot;plan-features-txt&quot;&gt;
+        Quick description
+      &lt;/div&gt;
+      &lt;div class=&quot;plan-features-list&quot;&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;i class=&quot;nc-icon-outline ui-1_check&quot;&gt;&lt;/i&gt; Element 1&lt;/li&gt;
+          &lt;li&gt;&lt;i class=&quot;nc-icon-outline ui-1_check&quot;&gt;&lt;/i&gt; Element 2&lt;/li&gt;
+          &lt;li&gt;&lt;i class=&quot;nc-icon-outline ui-1_check&quot;&gt;&lt;/i&gt; Element 3&lt;/li&gt;
+          &lt;li&gt;&lt;i class=&quot;nc-icon-outline ui-1_check&quot;&gt;&lt;/i&gt; Element 4&lt;/li&gt;
+          &lt;li&gt;&lt;i class=&quot;nc-icon-outline ui-1_simple-remove&quot;&gt;&lt;/i&gt; Element 5 not included&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;button class=&quot;btn btn-dark btn-rounded btn-lg icon-left-effect&quot;&gt;&lt;i class=&quot;nc-icon-outline ui-1_check&quot;&gt;&lt;/i&gt;&lt;span&gt;Choose&lt;/span&gt;&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+<p>For example, for 3 packages using this previous markup, you will have:</p>
+
+<pre class="prettyprint">
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;
+    &lt;!-- PACKAGE 1 MARKUP --&gt;         
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;
+    &lt;!-- PACKAGE 2 MARKUP --&gt;           
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;
+    &lt;!-- PACKAGE 3 MARKUP --&gt;             
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+<div class="separator"></div>
+
+<h3>Dark layout</h3>
+<p>
+  <img src="img/screenshots/pricing-dark.jpg" class="img-fluid no-bd" alt="pricing" />
+</p>
+<p>For dark layout, add <code>plan-dark</code> class to price-plan element.</p>
+<pre class="prettyprint">
+&lt;div class=&quot;price-plan plan-dark plan-boxed&quot;&gt;
+  &lt;!-- PLAN CONTENT MARKUP --&gt;
+&lt;/div&gt;</pre>
+
+<div class="separator"></div>
+
+<h3>Collapsed variation</h3>
+<p>
+  <img src="img/screenshots/pricing-collapsed.jpg" class="img-fluid no-bd" alt="pricing" />
+</p>
+<p>To use this design, add <code>plans-collapsed</code> class to parent element:</p>
+<pre class="prettyprint">
+&lt;div class=&quot;row plans-collapsed&quot;&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;
+    &lt;!-- PACKAGE 1 MARKUP --&gt;        
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;
+    &lt;!-- PACKAGE 2 MARKUP --&gt;            
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;
+    &lt;!-- PACKAGE 3 MARKUP --&gt;           
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+<h3>Minimal version</h3>
+<p>
+  <img src="img/screenshots/pricing-minimal.jpg" class="img-fluid no-bd" alt="pricing" />
+</p>
+<p>This version use a different markup that default boxed design:</p>
+<pre class="prettyprint">
+&lt;div class=&quot;price-plan&quot;&gt;
+  &lt;div class=&quot;plan-wrapper&quot;&gt;
+    &lt;div class=&quot;price&quot;&gt;
+      &lt;div class=&quot;price-wrapper&quot;&gt;
+        &lt;span class=&quot;price-symbol&quot;&gt;$&lt;/span&gt;
+        &lt;span class=&quot;price-value&quot;&gt;17&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;price-description&quot;&gt;
+        Per month
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;plan-info&quot;&gt;
+      &lt;div class=&quot;plan-title&quot;&gt;Basic&lt;/div&gt;
+      &lt;div class=&quot;plan-features-txt&quot;&gt;
+        Full website solution for store, blog, creative and cover pages.
+      &lt;/div&gt;
+      &lt;div class=&quot;plan-features-list&quot;&gt;
+        &lt;ul&gt;
+          &lt;li&gt;500 emails&lt;/li&gt;
+          &lt;li&gt;Unlimited data&lt;/li&gt;
+          &lt;li&gt;Future updates&lt;/li&gt;
+          &lt;li&gt;6 months support&lt;/li&gt;
+          &lt;li class=&quot;not-included&quot;&gt;End user can be charged&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn btn-white btn-bordered&quot;&gt;Choose this plan&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;  </pre>
+<p>For dark style, it's the same thing as previously. Just add <code>plan-dark</code> class to price-plan elements.</p>

@@ -1,0 +1,83 @@
+<div class="title">
+  <h1>Sections</h1>
+</div>
+<p>
+  <a class="btn btn-primary" href="../shortcodes-sections" target="_blank">Live example</a>
+</p>
+<p>Sections allow you to separate your page into different elements.</p>
+
+<h3>Basic markup</h3>
+<pre class="prettyprint">
+&lt;section class=&quot;section&quot;&gt;
+  &lt;!-- SECTION CONTENT --&gt;
+&lt;/section&gt;</pre>
+
+<p>To add a light border on top, add <code>border-top</code> class to your section. For border bottom, add <code>border-bottom</code> class.</p>
+
+<div class="separator"></div>
+
+<h3>Section sizes</h3>
+<p>If you want a minimum height for your section, you can add this class your section:</p>
+<p><code>section-lg</code>: your section will have a minimum height of 400px.</p>
+<p><code>section-hg</code>: your section will have a minimum height of 600px.</p>
+
+<div class="separator"></div>
+
+<h3>Half section</h3>
+<p>
+  <img src="img/screenshots/section-half.jpg" class="img-fluid" alt="screenshots" />
+</p>
+<p>Half section are great for image on one side and text / description in other side.</p>
+<pre class="prettyprint">
+&lt;section class=&quot;section half-section&quot;&gt;
+  &lt;div class=&quot;img-cover&quot; data-bg-img=&quot;nature/square-1.jpg&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;p-30&quot;&gt;
+    &lt;div class=&quot;title&quot;&gt;
+      &lt;h3&gt;Title&lt;/h3&gt;
+      &lt;p&gt;Subtitle&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;p&gt;Section description...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>
+<p>You can change padding of your description side by replacing <code>p-30</code> by other value (p-40, p-50...).</p>
+
+<p>If you want to have square section (same width / height), add <code>img-cover-square</code> class to img-cover:</p>
+<pre class="prettyprint">
+&lt;section class=&quot;section half-section&quot;&gt;
+  &lt;div class=&quot;img-cover img-cover-square&quot; data-bg-img=&quot;nature/square-1.jpg&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;p-30&quot;&gt;
+    &lt;div class=&quot;title&quot;&gt;
+      &lt;h3&gt;Title&lt;/h3&gt;
+      &lt;p&gt;Subtitle&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;p&gt;Section description...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>
+<div class="separator"></div>
+
+<h3>Image background section</h3>
+<p>
+  <img src="img/screenshots/section-bg.jpg" class="img-fluid no-bd" alt="screenshots" />
+</p>
+<p>You can add a background image to your section using <code>data-bg-img</code> attribute.</p>
+<pre class="prettyprint">
+&lt;section class=&quot;section&quot; data-bg-img=&quot;your-image-path.jpg&quot;&gt;
+  &lt;!-- SECTION CONTENT --&gt;
+&lt;/section&gt;</pre>
+<p>For parallax effect, use Skrollr attribute. For example:</p>
+<pre class="prettyprint">
+&lt;section class=&quot;section&quot; data-bg-img=&quot;your-image-path.jpg&quot; data-bottom-top=&quot;background-position:0px 0px;&quot; data-top-bottom=&quot;background-position:0px -130px;&quot;&gt;
+  &lt;!-- SECTION CONTENT --&gt;
+&lt;/section&gt;</pre>
+<p>For more information about Skrollr attribute, please visit Skrollr official documentation <a href="https://github.com/Prinzhorn/skrollr" target="_blank">here</a>.</p>
+
+<h3>background color section</h3>
+<p>
+  <img src="img/screenshots/section-bg-color.jpg" class="img-fluid no-bd" alt="screenshots" />
+</p>
+<p>To add a background color to your section, add your color class to your section, for example:</p>
+<pre class="prettyprint">
+&lt;section class=&quot;section indigo lighten-4&quot;&gt;
+  &lt;!-- SECTION CONTENT --&gt;
+&lt;/section&gt;</pre>
+<p>For more details about all background colors classes, <a href="#" class="ajax-menu" data-page="shortcodes-colors.html">please see colors documentation</a>.</p>

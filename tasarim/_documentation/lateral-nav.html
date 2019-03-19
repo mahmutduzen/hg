@@ -1,0 +1,77 @@
+<div class="title">
+  <h1>Lateral Navigation</h1>
+</div>
+<p>You can define your navigation to the left or right side of the page.</p>
+<p>Lateral navigation can have a light, dark or image background.</p>
+<p>You can add footer to lateral navigation, with social links or ecommerce features (cart, wishlist, search).</p>
+
+<section>
+  <p><a class="btn btn-primary" href="../homepage-shop-side-nav" target="_blank">Live example</a></p>
+
+  <h3>Basic markup</h3>
+  <p>Here is the basic markup of lateral navigation (left side with light background).</p>
+    <pre class="prettyprint">&lt;!-- BEGIN LATERAL NAVIGATION --&gt;
+&lt;header id=&quot;main-navigation&quot;&gt;
+  &lt;div class=&quot;main-nav-wrapper&quot;&gt;
+    &lt;div id=&quot;logo&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;
+          &lt;img src=&quot;assets/img/logo/your-logo.png&quot; alt=&quot;logo&quot;&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;nav id=&quot;main-menu&quot;&gt;
+      &lt;!-- YOUR MENU --&gt;
+    &lt;/nav&gt;
+    &lt;footer&gt;
+      &lt;a href=&quot;&quot; class=&quot;facebook&quot;&gt;
+      &lt;span&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+      &lt;/a&gt;
+      &lt;a href=&quot;&quot; class=&quot;instagram&quot;&gt;
+      &lt;span&gt;&lt;i class=&quot;fa fa-instagram&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+      &lt;/a&gt;
+      &lt;a href=&quot;&quot; class=&quot;twitter&quot;&gt;
+      &lt;span&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/footer&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+&lt;!-- END LATERAL NAVIGATION --&gt;</pre>  
+
+  <h3>Dark background color</h3>
+  <p>To have light navigation, add <code>header-dark</code> class to your body:</p>
+  <pre class="prettyprint">&lt;body class=&quot;header-transparent&quot;&gt;</pre> 
+
+  <h3>Image background</h3>
+  <p>If you want to have a background image, add <code>img-cover</code> class to your header id and a data-bg-img:</p>
+  <pre class="prettyprint">&lt;div id=&quot;header&quot; class=&quot;img-cover&quot; data-bg-img=&quot;your-image-path.jpg&quot;&gt;
+  &lt;!-- BEGIN LATERAL NAVIGATION --&gt;
+  &lt;header id=&quot;main-navigation&quot;&gt;
+    &lt;!-- MAIN NAVIGATION CONTENT --&gt;
+  &lt;/header&gt;
+  &lt;!-- END LATERAL NAVIGATION --&gt;
+&lt;/div&gt;</pre> 
+
+  <h3>Ecommerce footer</h3>
+  <p>If you want to replace social links by ecommerce links, here is the footer markup:</p>
+  <pre class="prettyprint">&lt;footer&gt;
+  &lt;a href=&quot;#&quot; class=&quot;tools-btn&quot; data-toggle-search=&quot;fullscreen&quot;&gt;
+    &lt;span class=&quot;tools-btn-icon&quot;&gt;&lt;i class=&quot;nc-icon-outline ui-1_zoom&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a href=&quot;wishlist&quot; class=&quot;tools-btn&quot;&gt;
+    &lt;span class=&quot;tools-btn-icon&quot;&gt;&lt;i class=&quot;nc-icon-outline ui-2_favourite-28&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;span class=&quot;wishlist_items_number&quot;&gt;0&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a href=&quot;cart&quot; class=&quot;tools-btn&quot;&gt;
+    &lt;span class=&quot;tools-btn-icon&quot;&gt;&lt;i class=&quot;nc-icon-glyph shopping_bag-16&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;span class=&quot;cart_items_number&quot;&gt;0&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/footer&gt;</pre>
+
+  <h3>Right Navigation</h3>
+  <p>To place navigation on the right side, just add <code>right-nav</code> to your body:</p>
+  <pre class="prettyprint">&lt;body class=&quot;right-nav&quot;&gt;</pre>  
+
+</section>
+
+
+
+

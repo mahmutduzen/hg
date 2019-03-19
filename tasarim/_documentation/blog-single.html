@@ -1,0 +1,258 @@
+<div class="title">
+  <h1>Single Post Layouts</h1>
+</div>
+<p>Post have multiple headers variations: image, slider, video, audio, quote or simple title.<br>
+Post can have left or right sidebar, no sidebar, or 2 sidebars on left.<br>
+Post can have html comments, or load comments via Facebook or Disqus (see <a href="#" class="ajax-menu" data-page="blog-comments.html">comments section</a>).</p>
+
+<h2 class="section-title m-t-60">Global structure</h2>
+<p>All post have same global structure with header, post content, post navigation and comments.</p>
+<pre class="prettyprint">&lt;div id=&quot;main-content&quot; class=&quot;post-single&quot;&gt;
+  &lt;!-- BEGIN HEADER --&gt;
+  &lt;header class=&quot;section-header&quot;&gt;
+    &lt;!-- HEADER CONTENT --&gt;
+  &lt;/header&gt;
+  &lt;!-- END HEADER --&gt;
+  
+  &lt;!-- BEGIN POST --&gt;
+  &lt;section class=&quot;section&quot;&gt;
+    &lt;!-- POST CONTENT --&gt;
+  &lt;/section&gt;
+  &lt;!-- END POST --&gt;
+
+  &lt;!-- BEGIN POST NAV --&gt;
+  &lt;section class=&quot;post-nav&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-6&quot;&gt;
+          &lt;a class=&quot;previous&quot; href=&quot;previous-post.html&quot;&gt;
+            &lt;span class=&quot;prev-icon&quot;&gt;
+              &lt;i class=&quot;nc-icon-glyph arrows-1_bold-left&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+            &lt;span&gt;Previous Post&lt;/span&gt;
+            &lt;span class=&quot;post-nav-title&quot;&gt;Previous post title&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-xs-6&quot;&gt;
+          &lt;a class=&quot;next&quot; href=&quot;next-post.html&quot;&gt;
+            &lt;span&gt;Next Post&lt;/span&gt;
+            &lt;span class=&quot;next-icon&quot;&gt;
+              &lt;i class=&quot;nc-icon-glyph arrows-1_bold-right&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+            &lt;span class=&quot;post-nav-title&quot;&gt;Next post title&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;!-- END POST NAV --&gt;
+
+  &lt;!-- BEGIN POST COMMENTS --&gt;
+  &lt;section class=&quot;post-comments&quot;&gt;
+    &lt;!-- COMMENTS CONTENT --&gt;
+  &lt;/section&gt;
+  &lt;!-- END POST COMMENTS --&gt;
+
+&lt;/div&gt;</pre>
+
+<h2 class="section-title m-t-60">Simple header with title</h2>
+<p><a class="btn btn-primary" href="../blog-single-header-white" target="_blank">Live example</a></p>
+<p>If you just want a header with title and some metadatas (author, date of post, category):</p>
+<pre class="prettyprint">&lt;div id=&quot;main-content&quot; class=&quot;post-single&quot;&gt;
+  &lt;header class=&quot;section-header&quot;&gt;
+    &lt;div class=&quot;container top-element&quot;&gt;
+      &lt;div class=&quot;row top-text&quot;&gt;
+        &lt;h1 class=&quot;blog-title&quot;&gt;Post Title&lt;/h1&gt;
+        &lt;ul class=&quot;blog-meta&quot;&gt;
+          &lt;li&gt;
+            by &lt;a href=&quot;#&quot;&gt;Admin&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            on &lt;a href=&quot;#&quot;&gt;January 15, 2016&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            in &lt;a href=&quot;#&quot;&gt;Blog Category&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;!-- POST CONTENT, POST NAV, COMMENTS --&gt;
+&lt;/div&gt;</pre>
+
+<h2 class="section-title m-t-60">Simple header with dark background</h2>
+<p><a class="btn btn-primary" href="../blog-single-header-dark" target="_blank">Live example</a></p>
+<p>Same as previous header with dark background:</p>
+<pre class="prettyprint">&lt;div id=&quot;main-content&quot; class=&quot;post-single&quot;&gt;
+  &lt;header class=&quot;section-header header-dark grey darken-4&quot;&gt;
+    &lt;div class=&quot;container top-element&quot;&gt;
+      &lt;div class=&quot;row top-text&quot;&gt;
+        &lt;h1 class=&quot;blog-title&quot;&gt;Post Title&lt;/h1&gt;
+        &lt;ul class=&quot;blog-meta&quot;&gt;
+          &lt;li&gt;
+            by &lt;a href=&quot;#&quot;&gt;Admin&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            on &lt;a href=&quot;#&quot;&gt;January 15, 2016&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            in &lt;a href=&quot;#&quot;&gt;Blog Category&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;!-- POST CONTENT, POST NAV, COMMENTS --&gt;
+&lt;/div&gt;</pre>
+
+<h2 class="section-title m-t-60">Header with image</h2>
+<p><a class="btn btn-primary" href="../blog-single-header-image" target="_blank">Live example</a></p>
+<p>Here we have a background image that resize automatically depending of screen width.</p>
+<pre class="prettyprint">&lt;header class=&quot;section-header header-lg header-dark img-cover&quot; data-bg-img=&quot;your-image-path.jpg&quot;&gt;
+  &lt;div class=&quot;section-overlay&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;container top-element&quot;&gt;
+    &lt;div class=&quot;row top-text&quot;&gt;
+      &lt;h1 class=&quot;blog-title&quot;&gt;Post Title&lt;/h1&gt;
+      &lt;ul class=&quot;blog-meta&quot;&gt;
+        &lt;li&gt;
+          by &lt;a href=&quot;#&quot;&gt;Admin&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          on &lt;a href=&quot;#&quot;&gt;January 15, 2016&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          in &lt;a href=&quot;#&quot;&gt;Blog Category&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</pre>
+
+<p>You want a parallax effect on page scroll? Theme use Skrollr plugin. Here is an example to add this cool effect:</p>
+<pre class="prettyprint">&lt;header class=&quot;section-header header-lg header-dark img-cover&quot; data-bg-img=&quot;your-image-path.jpg&quot; data-0=&quot;background-position:0px 0px;&quot; data-500=&quot;background-position:0px -100px;&quot;&gt;
+  &lt;!-- HEADER CONTENT --&gt;
+&lt;/header&gt;</pre>
+
+<h2 class="section-title m-t-60">Header with images slider</h2>
+<p><a class="btn btn-primary" href="../blog-single-header-slider" target="_blank">Live example</a></p>
+<p>For image slider layout, theme use Flexslider plugin:</p>
+<pre class="prettyprint">&lt;header class=&quot;section-header header-lg&quot;&gt;
+  &lt;div class=&quot;flexslider&quot; data-plugin-options='{&quot;controlNav&quot;: false,&quot;directionNav&quot;: false,&quot;slideshowSpeed&quot;:5000}'&gt;
+    &lt;ul class=&quot;slides&quot;&gt;
+      &lt;li&gt;
+        &lt;img src=&quot;assets/img/nature/path-image-1.jpg&quot; alt=&quot;&quot;&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;img src=&quot;assets/img/nature/path-image-1.jpg&quot; alt=&quot;&quot;&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;img src=&quot;assets/img/nature/path-image-1.jpg&quot; alt=&quot;&quot;&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;container top-element&quot;&gt;
+    &lt;div class=&quot;row top-text&quot;&gt;
+      &lt;h1 class=&quot;blog-title&quot;&gt;Post Title&lt;/h1&gt;
+      &lt;ul class=&quot;blog-meta&quot;&gt;
+        &lt;li&gt;
+          by &lt;a href=&quot;#&quot;&gt;Admin&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          on &lt;a href=&quot;#&quot;&gt;January 15, 2016&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          in &lt;a href=&quot;#&quot;&gt;Blog Category&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</pre>
+<p>You can change speed by changing slideshowSpeed value. For more information about Flexslider paramaters, like data-plugin-options attribute, please go to <a href="#" class="ajax-menu" data-page="sliders.html">sliders documentation</a>.</p>
+
+<h2 class="section-title m-t-60">Header with images slider fullscreen</h2>
+<p><a class="btn btn-primary" href="../blog-single-header-slider-fullheight" target="_blank">Live example</a></p>
+<p>Same as previous header, but fullscreen. Here we use background image instead of normal image to use cover effect.</p>
+<pre class="prettyprint">&lt;header class=&quot;header-dark height-full&quot;&gt;
+  &lt;div class=&quot;section-overlay&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;flexslider&quot; data-plugin-options='{&quot;controlNav&quot;:false,&quot;directionNav&quot;:false,&quot;slideshowSpeed&quot;:5000}'&gt;
+    &lt;ul class=&quot;slides&quot;&gt;
+      &lt;li style=&quot;background-image: url(path-image-1.jpg);&quot;&gt;&lt;/li&gt;
+      &lt;li style=&quot;background-image: url(path-image-2.jpg);&quot;&gt;&lt;/li&gt;
+      &lt;li style=&quot;background-image: url(path-image-3.jpg);&quot;&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;container top-element m-t-0&quot;&gt;
+    &lt;div class=&quot;row top-text&quot;&gt;
+      &lt;h1 class=&quot;blog-title&quot;&gt;Post Title&lt;/h1&gt;
+      &lt;ul class=&quot;blog-meta&quot;&gt;
+        &lt;li&gt;
+          by &lt;a href=&quot;#&quot;&gt;Admin&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          on &lt;a href=&quot;#&quot;&gt;January 15, 2016&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          in &lt;a href=&quot;#&quot;&gt;Blog Category&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;scroll-down go-next&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/header&gt;</pre>
+
+<h2 class="section-title m-t-60">Header with html video</h2>
+<p><a class="btn btn-primary" href="../blog-single-header-slider-fullheight" target="_blank">Live example</a></p>
+<p>You can add html video in your header.</p>
+<pre class="prettyprint">&lt;header class=&quot;section-video header-dark&quot;&gt;
+  &lt;div class=&quot;audio-video-wrapper&quot;&gt;
+    &lt;video id=&quot;video-js&quot; autoplay class=&quot;video-js full-video vjs-sublime-skin&quot; controls preload=&quot;auto&quot; height=&quot;400&quot; poster=&quot;path-poster-img.jpg&quot;&gt;
+      &lt;source src=&quot;path-video.mp4&quot; type=&quot;video/mp4&quot;&gt;
+    &lt;/video&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;container top-element&quot;&gt;
+    &lt;div class=&quot;row top-text&quot;&gt;
+      &lt;h1 class=&quot;blog-title&quot;&gt;Html Video Post&lt;/h1&gt;
+      &lt;ul class=&quot;blog-meta&quot;&gt;
+        &lt;li&gt;
+          by &lt;a href=&quot;#&quot;&gt;Admin&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          on &lt;a href=&quot;#&quot;&gt;January 15, 2016&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          in &lt;a href=&quot;#&quot;&gt;Blog Category&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</pre>
+
+<p>If you don't want that video play automatically when page is loaded, just remove <code>autoplay</code> attribute in video.<br>
+You can also add html video, or embed video (Youtube &amp; Vimeo) inside your post content.</p>
+
+<h2 class="section-title m-t-60">Header with audio</h2>
+<p><a class="btn btn-primary" href="../blog-single-header-audio" target="_blank">Live example</a></p>
+<p>You can add html audio file in your header too, like mp3 or mp4.</p>
+<pre class="prettyprint">&lt;header class=&quot;section-audio header-lg header-dark&quot;&gt;
+  &lt;div class=&quot;audio-video-wrapper&quot;&gt;
+    &lt;audio id=&quot;video-js&quot; class=&quot;video-js vjs-sublime-skin&quot; controls preload=&quot;auto&quot; height=&quot;400&quot; poster=&quot;poster-path.jpg&quot;&gt;
+      &lt;source src=&quot;audio-file-path.mp3&quot; type='audio/mp3'/&gt;
+    &lt;/audio&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;container top-element&quot;&gt;
+    &lt;div class=&quot;row top-text&quot;&gt;
+      &lt;h1 class=&quot;blog-title&quot;&gt;Audio Post&lt;/h1&gt;
+      &lt;ul class=&quot;blog-meta&quot;&gt;
+        &lt;li&gt;
+          by &lt;a href=&quot;#&quot;&gt;Admin&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          on &lt;a href=&quot;#&quot;&gt;January 15, 2016&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          in &lt;a href=&quot;#&quot;&gt;Blog Category&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</pre>
